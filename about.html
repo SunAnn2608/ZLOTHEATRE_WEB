@@ -7,27 +7,176 @@
     <script src="javascripts/js-basics.js"></script>
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">ЗлоТеатр - главная</a></li>
-          <li><a href="afisha.html">Афиша и билеты</a></li>
-          <li><a href="repertuar.html">Репертуар</a></li>
-          <li><a href="about.html">О театре</a></li>
-          <li><a href="visit.html">Визит в театр</a></li>
-          <li><a href="projects.html">Проекты</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="buffet.html">Буфет</a></li>
-          <li><a href="souvenir.html">Сувенирная лавка</a></li>
-        </ul>
-      </nav>
+  <body class="theme-light">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">ZLOTHEATRE</a>
+        <nav class="nav">
+          <a href="afisha.html">Афиша и билеты</a>
+          <a href="repertuar.html">Репертуар</a>
+          <a class="is-active" href="about.html">О театре</a>
+          <a href="visit.html">Визит в театр</a>
+          <a href="projects.html">Проекты</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="buffet.html">Буфет</a>
+          <a href="souvenir.html">Сувенирная лавка</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <!-- Уникальный контент страницы здесь -->
-      <h1>ЗлоТеатр - О театре</h1>
-      <p>Контент для страницы будет вставлен здесь, но чуточку позже</p>
-    </main>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container hero__wrap">
+        <div class="hero__title">
+          <h1>О театре</h1>
+          <p class="lead">«Злотеатр» сегодня</p>
+        </div>
+        <figure class="hero__image">
+          <img src="images/about/hero-banner.jpg" alt="ZLOTHEATRE — сцена" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ORIGIN -->
+    <section class="origin">
+      <div class="container origin__grid">
+        <figure class="origin__media">
+          <img src="images/about/origin-1.jpg" alt="" />
+        </figure>
+        <div class="origin__text">
+          <h2 class="section-title">Как всё начиналось</h2>
+          <p class="big">«Злотеатр» родился не как учреждение, а как вызов.</p>
+          <p>
+            Он не имеет точной даты основания — лишь момент, когда в одном из
+            заброшенных подвалов Москвы собрались трое: режиссёр, актёр и
+            женщина, о которой никто не знал, кем она была на самом деле. Они не
+            искали сцену — они искали тьму. Место, где театр перестаёт быть
+            игрой и становится обрядом.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFEST -->
+    <section class="manifest">
+      <div class="container manifest__grid">
+        <div class="manifest__text">
+          <h2 class="section-title">Ритуал → Форма → Структура</h2>
+          <p>
+            Первые показы проходили в закрытых пространствах — бассейнах,
+            подземных складах, квартирах с чёрными шторами. У зрителей не было
+            программок, но были инструкции:
+          </p>
+          <ul>
+            <li>молчать;</li>
+            <li>не отворачиваться;</li>
+            <li>не выходить, пока не разрешат.</li>
+          </ul>
+          <p class="accent">
+            Со временем ритуал стал формой. Форма — структурой.
+          </p>
+        </div>
+        <figure class="manifest__media">
+          <img src="images/about/origin-2.jpg" alt="" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- TODAY -->
+    <section class="today">
+      <div class="container today__grid">
+        <div class="today__text">
+          <p>
+            Так из подземного явления появился <strong>«Злотеатр»</strong> —
+            театр-переход, существующий между драмой, сном и срывом. Его
+            постановки не обсуждают — ими болеют.
+          </p>
+          <p>
+            <b>Сегодня «Злотеатр»</b> — независимая труппа режиссёров, актёров,
+            саунд-художников и сценографов, работающих в жанре интенсивного
+            психологического театра с элементами иммерсии, триллера и
+            мистического реализма.
+          </p>
+        </div>
+        <figure class="today__image">
+          <img src="images/about/today-1.jpg" alt="" />
+        </figure>
+      </div>
+      <blockquote class="punch">
+        Мы не подстраиваемся под комфорт. Мы поднимаем то, что прячется под
+        кожей.
+      </blockquote>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="partners">
+      <div class="container">
+        <h2 class="section-title center">Наши партнёры и спонсоры</h2>
+        <p class="partners__lead">
+          «Злотеатр» благодарит организации, поддерживающие независимый театр и
+          современные сценические формы.
+        </p>
+
+        <div class="partners__groups">
+          <div class="p-group">
+            <h3>Государственная поддержка</h3>
+            <div class="logos">
+              <img src="images/about/logos/gov-1.png" alt="Гос.логотип 1" />
+              <img src="images/about/logos/gov-2.png" alt="Гос.логотип 2" />
+            </div>
+          </div>
+          <div class="p-group">
+            <h3>Благотворительные и корпоративные партнёры</h3>
+            <div class="logos">
+              <img src="images/about/logos/corp-1.png" alt="Партнёр 1" />
+              <img src="images/about/logos/corp-2.png" alt="Партнёр 2" />
+              <img src="images/about/logos/corp-3.png" alt="Партнёр 3" />
+            </div>
+          </div>
+          <div class="p-group">
+            <h3>Медиапартнёры</h3>
+            <div class="logos">
+              <img src="images/about/logos/media-1.png" alt="Медиа 1" />
+              <img src="images/about/logos/media-2.png" alt="Медиа 2" />
+              <img src="images/about/logos/media-3.png" alt="Медиа 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <h4>Афиша и билеты</h4>
+          <ul>
+            <li><a href="afisha.html">Афиша</a></li>
+            <li><a href="hits.html">Хиты сезона</a></li>
+            <li><a href="cashdesk.html">Касса</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>О театре</h4>
+          <ul>
+            <li><a class="is-active" href="about.html">История</a></li>
+            <li><a href="press.html">Для СМИ</a></li>
+            <li><a href="sponsors.html">Спонсоры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="contacts.html">Контакты театра</a></li>
+            <li><a href="buffet.html">Буфет</a></li>
+            <li><a href="souvenir.html">Сувенирная лавка</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
+    </footer>
+
+    <script src="javascripts/about.js"></script>
   </body>
 </html>

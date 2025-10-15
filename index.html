@@ -8,26 +8,89 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">ЗлоТеатр - главная</a></li>
-          <li><a href="afisha.html">Афиша и билеты</a></li>
-          <li><a href="repertuar.html">Репертуар</a></li>
-          <li><a href="about.html">О театре</a></li>
-          <li><a href="visit.html">Визит в театр</a></li>
-          <li><a href="projects.html">Проекты</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="buffet.html">Буфет</a></li>
-          <li><a href="souvenir.html">Сувенирная лавка</a></li>
-        </ul>
-      </nav>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">ZLOTHEATRE</a>
+        <nav class="nav">
+          <a href="afisha.html">Афиша и билеты</a>
+          <a href="repertoir.html">Репертуар</a>
+          <a href="about.html">О театре</a>
+          <a href="visit.html">Визит в театр</a>
+          <a href="projects.html">Проекты</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="buffet.html">Буфет</a>
+          <a href="souvenir.html">Сувенирная лавка</a>
+        </nav>
+      </div>
     </header>
-
     <main>
-      <!-- Уникальный контент страницы здесь -->
-      <h1>ЗлоТеатр – Главная</h1>
-      <p>Добро пожаловать на официальный сайт театра.</p>
+      <!-- HERO / баннер -->
+      <section class="hero">
+        <img src="images/banner.jpg" alt="Баннер театра" class="hero__bg" />
+        <div class="hero__content">
+          <h1>Хиты сезона</h1>
+          <p>Лучшие спектакли этого года</p>
+          <a href="afisha.html" class="btn btn--primary">Купить билеты</a>
+        </div>
+      </section>
+
+      <!-- Карусель -->
+      <section class="carousel">
+        <h2>Акции</h2>
+        <div class="carousel__wrapper">
+          <div class="card">
+            <img src="images/show1.jpg" alt="Зеркало без отражения" />
+            <div class="card__overlay">
+              <h3>«Зеркало без отражения»</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/show2.jpg" alt="Тени, что шепчут" />
+            <div class="card__overlay">
+              <h3>«Тени, что шепчут»</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/show3.jpg" alt="Последний зритель" />
+            <div class="card__overlay">
+              <h3>«Последний зритель»</h3>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="btn btn--secondary">Подробнее</a>
+      </section>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <h4>Афиша и билеты</h4>
+          <ul>
+            <li><a href="afisha.html">Афиша</a></li>
+            <li><a href="hits.html">Хиты сезона</a></li>
+            <li><a href="cashdesk.html">Касса</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Репертуар</h4>
+          <ul>
+            <li><a href="media.html">Медиа</a></li>
+            <li><a href="persons.html">Персоналии</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>О театре</h4>
+          <ul>
+            <li><a href="history.html">История</a></li>
+            <li><a href="press.html">Для СМИ</a></li>
+            <li><a href="sponsors.html">Спонсоры</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2025 ZLOTHEATRE. Все права защищены.</p>
+    </footer>
   </body>
+  <script src="javascripts/scripts.js"></script>
 </html>

@@ -1,0 +1,228 @@
+/* Светлая тема для страницы */
+.theme-light {
+  background: #fbf5f5;
+  color: #000;
+}
+
+/* Общие */
+.section-title {
+  font: 700 48px/1.1 'GHEA Mariam', 'Lunasima', sans-serif;
+  letter-spacing: 0.4px;
+  margin: 0 0 18px;
+}
+.section-subtitle {
+  font: 400 16px/1.5 'Inter', sans-serif;
+  color: #3b3b3b;
+}
+
+/* HERO */
+.page-hero {
+  padding: 56px 0 24px;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+.hero__text h1 {
+  font: 700 72px/1 'GHEA Mariam', 'Lunasima', sans-serif;
+  margin: 0 0 8px;
+}
+.lead {
+  font: 600 20px/1.2 'Inter', sans-serif;
+  color: #5f0008;
+  margin: 0 0 16px;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.columns p {
+  margin: 0;
+  font: 400 16px/1.5 'Inter', sans-serif;
+}
+.punch {
+  margin: 18px 0 0;
+  padding-left: 16px;
+  border-left: 4px solid #5f0008;
+  font: 600 18px/1.4 'Inter', sans-serif;
+}
+.hero__image img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+  object-fit: cover;
+}
+
+/* MEDIA STRIP */
+.media-strip {
+  padding: 40px 0 0;
+}
+.media-strip__row {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 20px;
+}
+.media-strip__row img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+/* PERSONS */
+.persons {
+  padding: 56px 0;
+}
+.cards {
+  display: grid;
+  gap: 20px;
+}
+.cards--persons {
+  grid-template-columns: repeat(5, 1fr);
+}
+.p-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding-bottom: 12px;
+}
+.p-card__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+.p-card__name {
+  margin: 10px 12px 2px;
+  font: 700 18px/1.2 'Inter', sans-serif;
+}
+.p-card__role {
+  margin: 0 12px 10px;
+  color: #666;
+  font: 400 14px/1.3 'Inter', sans-serif;
+}
+
+/* MEMORY */
+.memory {
+  padding: 40px 0;
+}
+.cards--memory {
+  grid-template-columns: repeat(5, 1fr);
+}
+.cards--memory img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ORCHESTRA */
+.orchestra {
+  padding: 56px 0;
+}
+.orchestra__grid {
+  display: grid;
+  grid-template-columns: 620px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.orchestra__cover img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.orchestra__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.mini-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+.mini-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.mini-card h4 {
+  margin: 10px 12px 12px;
+  font: 600 16px/1.3 'Inter', sans-serif;
+}
+
+/* CREW */
+.crew {
+  padding: 56px 0 80px;
+}
+.cards--crew {
+  grid-template-columns: repeat(3, 1fr);
+}
+.crew-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.crew-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+.crew-card h4 {
+  margin: 12px;
+  font: 600 18px/1.3 'Inter', sans-serif;
+}
+
+/* Адаптив */
+@media (max-width: 1200px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .columns {
+    grid-template-columns: 1fr;
+  }
+  .cards--persons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cards--memory {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .orchestra__grid {
+    grid-template-columns: 1fr;
+  }
+  .orchestra__cover img {
+    height: 420px;
+  }
+}
+@media (max-width: 700px) {
+  .section-title {
+    font-size: 36px;
+  }
+  .cards--persons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cards--memory {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cards--crew {
+    grid-template-columns: 1fr;
+  }
+  .media-strip__row {
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    display: none;
+  } /* если нет мобильного меню */
+}

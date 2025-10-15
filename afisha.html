@@ -8,26 +8,199 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">ЗлоТеатр - главная</a></li>
-          <li><a href="afisha.html">Афиша и билеты</a></li>
-          <li><a href="repertuar.html">Репертуар</a></li>
-          <li><a href="about.html">О театре</a></li>
-          <li><a href="visit.html">Визит в театр</a></li>
-          <li><a href="projects.html">Проекты</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="buffet.html">Буфет</a></li>
-          <li><a href="souvenir.html">Сувенирная лавка</a></li>
-        </ul>
-      </nav>
+    <!-- HEADER (как на главной) -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">ZLOTHEATRE</a>
+        <nav class="nav">
+          <a class="is-active" href="afisha.html">Афиша и билеты</a>
+          <a href="repertoir.html">Репертуар</a>
+          <a href="about.html">О театре</a>
+          <a href="visit.html">Визит в театр</a>
+          <a href="projects.html">Проекты</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="buffet.html">Буфет</a>
+          <a href="souvenir.html">Сувенирная лавка</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <!-- Уникальный контент страницы здесь -->
-      <h1>ЗлоТеатр – Афиша и билеты</h1>
-      <p>Добро пожаловать на официальный сайт театра.</p>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Афиша — Июнь</h1>
+        <div class="filters">
+          <label class="filters__item">
+            <span>Месяц</span>
+            <select id="monthSelect">
+              <option value="june" selected>Июнь</option>
+              <option value="july">Июль</option>
+              <option value="august">Август</option>
+            </select>
+          </label>
+          <label class="filters__item">
+            <span>Формат</span>
+            <select id="typeSelect">
+              <option value="all" selected>Все</option>
+              <option value="premiere">Премьера</option>
+              <option value="hit">Хит сезона</option>
+            </select>
+          </label>
+          <label class="filters__item filters__search">
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Поиск спектакля…"
+            />
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID с карточками спектаклей -->
+    <main class="container">
+      <div id="cards" class="cards">
+        <!-- Карточка -->
+        <article class="card" data-month="june" data-type="hit">
+          <figure class="card__media">
+            <img src="images/afisha/teni.jpg" alt="Тени, что шепчут" />
+            <figcaption class="sr-only">
+              Постер спектакля «Тени, что шепчут»
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--hit">Хит сезона</span>
+              <time datetime="2025-06-12">12 июня, 19:00</time>
+            </div>
+            <h3 class="card__title">«Тени, что шепчут»</h3>
+            <p class="card__desc">
+              Психологическая драма о голосах прошлого и цене выбора.
+            </p>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="ticket.html?show=teni"
+                >Купить билет</a
+              >
+              <a class="btn btn--ghost" href="show.html?show=teni">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-month="june" data-type="premiere">
+          <figure class="card__media">
+            <img
+              src="images/afisha/poslednii-zritel.jpg"
+              alt="Последний зритель"
+            />
+          </figure>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--premiere">Премьера</span>
+              <time datetime="2025-06-18">18 июня, 20:00</time>
+            </div>
+            <h3 class="card__title">«Последний зритель»</h3>
+            <p class="card__desc">Мистерия о границе сцены и реальности.</p>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="ticket.html?show=viewer"
+                >Купить билет</a
+              >
+              <a class="btn btn--ghost" href="show.html?show=viewer"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-month="june" data-type="hit">
+          <figure class="card__media">
+            <img src="images/afisha/zerkalo.jpg" alt="Зеркало без отражения" />
+          </figure>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--hit">Хит сезона</span>
+              <time datetime="2025-06-22">22 июня, 19:00</time>
+            </div>
+            <h3 class="card__title">«Зеркало без отражения»</h3>
+            <p class="card__desc">Триллер о человеке, потерявшем своё лицо.</p>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="ticket.html?show=mirror"
+                >Купить билет</a
+              >
+              <a class="btn btn--ghost" href="show.html?show=mirror"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-month="july" data-type="premiere">
+          <figure class="card__media">
+            <img src="images/afisha/glubina.jpg" alt="Глубина" />
+          </figure>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--premiere">Премьера</span>
+              <time datetime="2025-07-05">5 июля, 19:30</time>
+            </div>
+            <h3 class="card__title">«Глубина»</h3>
+            <p class="card__desc">
+              Сценическая притча о том, что скрыто под поверхностью.
+            </p>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="ticket.html?show=depth"
+                >Купить билет</a
+              >
+              <a class="btn btn--ghost" href="show.html?show=depth"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- добавляй карточки по этому же шаблону -->
+      </div>
+
+      <!-- пагинация (если нужна) -->
+      <nav class="pagination" aria-label="Навигация по странице афиши">
+        <a class="pagination__btn is-disabled" href="#" aria-disabled="true"
+          >Назад</a
+        >
+        <a class="pagination__btn is-active" href="#">1</a>
+        <a class="pagination__btn" href="#">2</a>
+        <a class="pagination__btn" href="#">3</a>
+        <a class="pagination__btn" href="#">Вперёд</a>
+      </nav>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <h4>Афиша и билеты</h4>
+          <ul>
+            <li><a class="is-active" href="afisha.html">Афиша</a></li>
+            <li><a href="hits.html">Хиты сезона</a></li>
+            <li><a href="cashdesk.html">Касса</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>О театре</h4>
+          <ul>
+            <li><a href="history.html">История</a></li>
+            <li><a href="press.html">Для СМИ</a></li>
+            <li><a href="sponsors.html">Спонсоры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="contacts.html">Контакты театра</a></li>
+            <li><a href="buffet.html">Буфет</a></li>
+            <li><a href="souvenir.html">Сувенирная лавка</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
+    </footer>
   </body>
+  <script src="javascripts/afisha.js"></script>
 </html>
