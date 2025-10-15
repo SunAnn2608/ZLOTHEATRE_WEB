@@ -7,27 +7,141 @@
     <script src="javascripts/js-basics.js"></script>
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">ЗлоТеатр - главная</a></li>
-          <li><a href="afisha.html">Афиша и билеты</a></li>
-          <li><a href="repertuar.html">Репертуар</a></li>
-          <li><a href="about.html">О театре</a></li>
-          <li><a href="visit.html">Визит в театр</a></li>
-          <li><a href="projects.html">Проекты</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="buffet.html">Буфет</a></li>
-          <li><a href="souvenir.html">Сувенирная лавка</a></li>
-        </ul>
-      </nav>
+  <body class="theme-light">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="index.html">ZLOTHEATRE</a>
+        <nav class="nav">
+          <a href="afisha.html">Афиша и билеты</a>
+          <a href="repertuar.html">Репертуар</a>
+          <a href="about.html">О театре</a>
+          <a href="visit.html">Визит в театр</a>
+          <a class="is-active" href="projects.html">Проекты</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="buffet.html">Буфет</a>
+          <a href="souvenir.html">Сувенирная лавка</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <!-- Уникальный контент страницы здесь -->
-      <h1>ЗлоТеатр – Проекты</h1>
-      <p>Контент для страницы будет вставлен здесь, но чуточку позже</p>
-    </main>
+    <!-- HERO -->
+    <section class="page-hero">
+      <img src="images/projects/hero.jpg" alt="Проектная афиша театра" />
+    </section>
+
+    <!-- АНОНСЫ -->
+    <section id="announces" class="section">
+      <div class="container">
+        <h1 class="section-title">Анонсы</h1>
+
+        <article class="announce">
+          <figure class="announce__media">
+            <img
+              src="images/projects/announce-1.jpg"
+              alt="Интерактивный онлайн-спектакль"
+            />
+            <figcaption class="tag">Скоро</figcaption>
+          </figure>
+          <div class="announce__info">
+            <h2>Интерактивный онлайн спектакль</h2>
+            <p>
+              Экспериментальная форма, где зритель влияет на ход действия. В
+              основе — психологический триллер с элементами мистического
+              реализма.
+            </p>
+            <div class="announce__cta">
+              <a class="btn btn--ghost" href="#archive">Подробнее</a>
+              <a class="btn" href="afisha.html">Купить билеты</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="announce">
+          <figure class="announce__media">
+            <img
+              src="images/projects/announce-2.jpg"
+              alt="Проект «Город теней»"
+            />
+            <figcaption class="tag">Премьера месяца</figcaption>
+          </figure>
+          <div class="announce__info">
+            <h2>Город теней</h2>
+            <p>
+              Иммерсивная прогулка по ночному театру: залы, коридоры и сцены
+              становятся частью сюжета. Только 8 показов.
+            </p>
+            <div class="announce__cta">
+              <a class="btn btn--ghost" href="#archive">Подробнее</a>
+              <a class="btn" href="afisha.html">Купить билеты</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- АРХИВ -->
+    <section id="archive" class="section section--archive">
+      <div class="container">
+        <h2 class="section-title">Архив</h2>
+
+        <div class="grid">
+          <a class="card" href="#">
+            <img src="images/projects/archive-1.jpg" alt="" />
+            <div class="card__body">
+              <h3>Где шепчет кукушка</h3>
+              <button class="btn btn--ghost">Подробнее</button>
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <img src="images/projects/archive-2.jpg" alt="" />
+            <div class="card__body">
+              <h3>Глаз внутри стены</h3>
+              <button class="btn btn--ghost">Подробнее</button>
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <img src="images/projects/archive-3.jpg" alt="" />
+            <div class="card__body">
+              <h3>Тени что шепчут</h3>
+              <button class="btn btn--ghost">Подробнее</button>
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <img src="images/projects/archive-4.jpg" alt="" />
+            <div class="card__body">
+              <h3>Последний зритель</h3>
+              <button class="btn btn--ghost">Подробнее</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <h4>Проекты</h4>
+          <ul>
+            <li><a href="#announces">Анонсы</a></li>
+            <li><a href="#archive">Архив</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="contacts.html">Контакты театра</a></li>
+            <li><a href="afisha.html">Афиша и билеты</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
+    </footer>
+
+    <script src="javascripts/projects.js"></script>
   </body>
 </html>

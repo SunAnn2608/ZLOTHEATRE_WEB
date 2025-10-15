@@ -1,0 +1,118 @@
+.theme-light {
+  background: #fff;
+  color: #000;
+}
+.page-hero {
+  background: #fbf5f5;
+  padding: 60px 0 30px;
+  text-align: center;
+}
+.page-hero .section-title {
+  font: 700 72px/1.1 'GHEA Mariam', 'Lunasima', sans-serif;
+  margin-bottom: 10px;
+}
+.page-hero .lead {
+  font: 400 20px/1.4 'Inter', sans-serif;
+  color: #444;
+}
+
+.contacts-section {
+  padding: 64px 0;
+  border-bottom: 1px solid #eee;
+}
+.contacts-section.alt {
+  background: #fbf5f5;
+}
+.contacts-section h2 {
+  font: 700 40px/1.2 'Lunasima', 'Inter', sans-serif;
+  margin-bottom: 18px;
+  color: #5f0008;
+}
+.contacts-section h3 {
+  font: 600 26px/1.2 'Lunasima', 'Inter', sans-serif;
+  margin-top: 32px;
+  margin-bottom: 6px;
+}
+.contacts-section p {
+  font: 400 18px/1.6 'Inter', sans-serif;
+  margin: 4px 0;
+}
+
+.contacts-form {
+  background: #f3eded;
+  padding: 80px 0;
+  text-align: center;
+}
+.contacts-form h2 {
+  font: 700 48px/1.2 'Lunasima', 'Inter', sans-serif;
+  color: #5f0008;
+  margin-bottom: 16px;
+}
+.contacts-form .hint {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  font: 400 16px/1.4 'Inter', sans-serif;
+  color: #444;
+}
+
+.contacts-form form {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font: 400 16px 'Inter', sans-serif;
+  resize: none;
+}
+textarea {
+  min-height: 140px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #5f0008;
+}
+.btn {
+  align-self: center;
+  background: linear-gradient(90deg, #b80404, #5f0008);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font: 600 16px/1 'Inter', sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* footer */
+.footer__col .socials img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .page-hero .section-title {
+    font-size: 52px;
+  }
+  .contacts-section h2 {
+    font-size: 32px;
+  }
+  .contacts-form h2 {
+    font-size: 36px;
+  }
+}

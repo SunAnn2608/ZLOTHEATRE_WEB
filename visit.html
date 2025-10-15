@@ -7,27 +7,343 @@
     <script src="javascripts/js-basics.js"></script>
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">ЗлоТеатр - главная</a></li>
-          <li><a href="afisha.html">Афиша и билеты</a></li>
-          <li><a href="repertuar.html">Репертуар</a></li>
-          <li><a href="about.html">О театре</a></li>
-          <li><a href="visit.html">Визит в театр</a></li>
-          <li><a href="projects.html">Проекты</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="buffet.html">Буфет</a></li>
-          <li><a href="souvenir.html">Сувенирная лавка</a></li>
-        </ul>
-      </nav>
+  <body class="theme-light">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="index.html">ZLOTHEATRE</a>
+        <nav class="nav">
+          <a href="afisha.html">Афиша и билеты</a>
+          <a href="repertuar.html">Репертуар</a>
+          <a href="about.html">О театре</a>
+          <a class="is-active" href="visit.html">Визит в театр</a>
+          <a href="projects.html">Проекты</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="buffet.html">Буфет</a>
+          <a href="souvenir.html">Сувенирная лавка</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <!-- Уникальный контент страницы здесь -->
-      <h1>ЗлоТеатр - Визит в театр</h1>
-      <p>Контент для страницы будет вставлен здесь, но чуточку позже</p>
-    </main>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container hero__wrap">
+        <h1>Как добраться?</h1>
+        <figure class="hero__image">
+          <img src="images/visit/hero-map.jpg" alt="Карта проезда к театру" />
+        </figure>
+        <p class="sub">
+          Адрес: Москва, Театральная, 1 • м. Театральная — 4 мин пешком
+        </p>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section class="rules" id="rules">
+      <div class="container">
+        <h2 class="section-title center">Культура посещения</h2>
+
+        <div class="rules__intro">
+          <p>
+            <b>Дорогие зрители!</b> Наш театр — взрослый (18+). Чтобы сохранить
+            атмосферу, просим соблюдать правила.
+          </p>
+          <p class="muted">
+            Соблюдение этих правил — уважение к актёрам и зрителям. Спасибо!
+          </p>
+        </div>
+
+        <div class="accordion">
+          <details class="acc" open>
+            <summary>Время, пунктуальность и антракт</summary>
+            <div class="acc__body">
+              Приходите за 20–30 минут, опоздавших не сажаем до антракта.
+              Покидать зал во время действия не рекомендуется.
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Дресс-код и внешний вид</summary>
+            <div class="acc__body">
+              Просим приходить в опрятной одежде. Резкие запахи парфюма и шумные
+              аксессуары — нежелательны.
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Тишина и внимание</summary>
+            <div class="acc__body">
+              Телефоны — в беззвучный режим, съёмка в зале запрещена. Разговоры
+              и шуршание пакетов мешают.
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Курение</summary>
+            <div class="acc__body">Запрещено на всей территории театра.</div>
+          </details>
+
+          <details class="acc">
+            <summary>Еда и алкоголь</summary>
+            <div class="acc__body">
+              В зал нельзя. Буфет работает до спектакля и в антракте.
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Бережное отношение к театру</summary>
+            <div class="acc__body">
+              Пожалуйста, соблюдайте чистоту и следуйте указаниям персонала.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESSIBILITY -->
+    <section class="a11y" id="a11y">
+      <div class="container">
+        <div class="a11y__head">
+          <h2 class="section-title">
+            Доступная среда для посетителей с&nbsp;ОВЗ
+          </h2>
+          <p>
+            Мы создаём комфортные условия: специальные места, навигация, помощь
+            персонала.
+          </p>
+        </div>
+
+        <div class="a11y__grid">
+          <div class="a11y__text">
+            <ul class="ul">
+              <li>
+                <b>Для колясочников:</b> 6 трансформируемых мест (первый ряд
+                партера).
+              </li>
+              <li>
+                <b>Для слабовидящих:</b> места с оптимальным обзором (ряды 5–7,
+                центр).
+              </li>
+              <li><b>Для слабослышащих:</b> зоны с индукционными петлями.</li>
+            </ul>
+            <div class="a11y__cards">
+              <div class="kpi">
+                <b>2</b><span>входа с пандусами</span><small>уклон ≤ 5°</small>
+              </div>
+              <div class="kpi">
+                <b>3</b><span>лифта</span><small>голос. сопровождение</small>
+              </div>
+              <div class="kpi">
+                <b>6</b><span>адаптированных туалетов</span
+                ><small>на каждом этаже</small>
+              </div>
+              <div class="kpi">
+                <b>∞</b><span>тактильная навигация</span
+                ><small>по всему зданию</small>
+              </div>
+              <div class="kpi">
+                <b>1</b><span>зона отдыха</span><small>с кушетками</small>
+              </div>
+            </div>
+          </div>
+          <figure class="a11y__image">
+            <img src="images/visit/a11y.jpg" alt="Доступная среда в театре" />
+          </figure>
+        </div>
+
+        <div class="a11y__more">
+          <h3>Дополнительные услуги</h3>
+          <div class="more__grid">
+            <div class="more">
+              <b>Бесплатные коляски</b><small>по предварительному заказу</small>
+            </div>
+            <div class="more">
+              <b>Сопровождающий персонал</b><small>бронь за 24 часа</small>
+            </div>
+            <div class="more">
+              <b>Аудиогиды с тифлокомментариями</b><small>по запросу</small>
+            </div>
+            <div class="more">
+              <b>Сурдоперевод</b><small>для 3–4 премьер в сезон</small>
+            </div>
+            <div class="more">
+              <b>Тактильные экскурсии</b><small>по запросу на кассах</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="a11y__how">
+          <h3>Как воспользоваться услугами?</h3>
+          <ol>
+            <li>При онлайн-покупке отметьте «Требуется специальное место».</li>
+            <li>Выберите тип услуги (коляска, тифлокомментарий и др.).</li>
+            <li>Получите подтверждение на e-mail.</li>
+          </ol>
+          <p class="tel">
+            <b>Телефон для справок:</b> +7 (499) 202-08-26 (доб. 5)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKETS -->
+    <section class="tickets" id="tickets">
+      <div class="container">
+        <h2 class="section-title center">Как купить билет?</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="images/visit/tickets-online.jpg" alt="" />
+            <h3>Онлайн-покупка</h3>
+            <ul>
+              <li>На сайте театра (24/7)</li>
+              <li>В мобильном приложении (iOS/Android)</li>
+              <li>На партнёрских площадках (Яндекс.Афиша, Kassir и др.)</li>
+            </ul>
+          </article>
+          <article class="card">
+            <img src="images/visit/tickets-office.jpg" alt="" />
+            <h3>Касса театра</h3>
+            <ul>
+              <li>Адрес: Москва, Театральная, 1</li>
+              <li>Часы работы: 10:00–20:00</li>
+            </ul>
+          </article>
+          <article class="card">
+            <img src="images/visit/tickets-kiosk.jpg" alt="" />
+            <h3>Автоматы</h3>
+            <ul>
+              <li>В фойе театра, ежедневно 10:00–20:00</li>
+            </ul>
+          </article>
+          <article class="card">
+            <img src="images/visit/tickets-phone.jpg" alt="" />
+            <h3>По телефону</h3>
+            <ul>
+              <li>+7 (499) 202-08-26</li>
+              <li>10:00–20:00</li>
+            </ul>
+          </article>
+          <article class="card">
+            <img src="images/visit/tickets-corp.jpg" alt="" />
+            <h3>Для компаний</h3>
+            <ul>
+              <li>Группы от 10 человек — скидка 15%</li>
+              <li>Оформление по договору</li>
+              <li>corp@teatr.ru • +7 (499) 202-08-26</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="benefits">
+          <div class="benefits__text">
+            <h3>Льготные условия</h3>
+
+            <h4>Студенты</h4>
+            <ul>
+              <li><b>−30%</b> на все спектакли по студбилету</li>
+              <li><b>Студенческая среда</b>: последний четверг месяца −50%</li>
+              <li>
+                10 бесплатных мест на гала-спектакли (регистрация за 3 дня)
+              </li>
+            </ul>
+
+            <h4>Пенсионеры</h4>
+            <ul>
+              <li><b>−40%</b> на дневные спектакли (до 17:00)</li>
+              <li><b>Серебряный четверг</b>: −55% на утренние спектакли</li>
+              <li>Чай/кофе в буфете — бесплатно</li>
+            </ul>
+
+            <h4>Именинники</h4>
+            <ul>
+              <li>В день рождения и +3 дня — <b>−50%</b> на билет</li>
+              <li>Подарок: бокал шампанского/десерт</li>
+              <li>+1 сопровождающий бесплатно (по паспорту)</li>
+            </ul>
+          </div>
+
+          <aside class="benefits__note">
+            <h4>Общие условия</h4>
+            <ul>
+              <li>Льготы не суммируются</li>
+              <li>Нужны подтверждающие документы</li>
+              <li>Количество льготных мест ограничено</li>
+              <li>Возврат — не позднее чем за 3 дня до спектакля</li>
+            </ul>
+            <p>
+              Бронь льготных билетов: в кассе, по телефону или через форму на
+              сайте.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR -->
+    <section class="tour" id="tour">
+      <div class="container">
+        <h2 class="section-title center">Экскурсия по театру</h2>
+
+        <div class="tour__lead">
+          <div class="tour__text">
+            <h3>Театр теней и тайн</h3>
+            <p>
+              <b
+                >Готовы сделать шаг туда, где граница между сценой и реальностью
+                стирается?</b
+              >
+              Приглашаем на экскурсию — в сердце мистики, страха и искусства.
+            </p>
+            <ul class="dash">
+              <li>Коридоры, где до сих пор слышны шаги героев</li>
+              <li>Гримёрки, перевоплощения, реквизит</li>
+              <li>Реальные истории необъяснимых явлений</li>
+            </ul>
+          </div>
+          <figure class="tour__img">
+            <img src="images/visit/tour-hero.jpg" alt="Закулисье театра" />
+          </figure>
+        </div>
+
+        <div class="tour__facts">
+          <div class="fact"><b>60 минут</b><span>Продолжительность</span></div>
+          <div class="fact"><b>Группы</b><span>Формат посещения</span></div>
+          <div class="fact fact-18">
+            <b>СТРОГО 18+</b
+            ><span>Часть экспонатов может быть некомфортна</span>
+          </div>
+        </div>
+
+        <p class="center tour__cta">
+          Записаться можно онлайн, по телефону или в кассе театра.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <h4>Визит в театр</h4>
+          <ul>
+            <li><a href="#rules">Правила посещения</a></li>
+            <li><a href="#a11y">Зрителям с ОВЗ</a></li>
+            <li><a href="#tickets">Как купить билет</a></li>
+            <li><a href="#tour">Экскурсия по театру</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="contacts.html">Контакты театра</a></li>
+            <li><a href="buffet.html">Буфет</a></li>
+            <li><a href="souvenir.html">Сувенирная лавка</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
+    </footer>
+
+    <script src="javascripts/visit.js"></script>
   </body>
 </html>
