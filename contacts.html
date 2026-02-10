@@ -1,151 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Контакты</title>
-    <script src="javascripts/js-basics.js"></script>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-  </head>
-  <body class="theme-light">
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container header__inner">
-        <a href="index.html" class="logo">ZLOTHEATRE</a>
-        <nav class="nav">
-          <a href="afisha.html">Афиша и билеты</a>
-          <a href="repertuar.html">Репертуар</a>
-          <a href="about.html">О театре</a>
-          <a href="visit.html">Визит в театр</a>
-          <a href="projects.html">Проекты</a>
-          <a class="is-active" href="contacts.html">Контакты</a>
-          <a href="buffet.html">Буфет</a>
-          <a href="souvenir.html">Сувенирная лавка</a>
-        </nav>
-      </div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗЛО ТЕАТР - Контакты</title>
+  <link rel="stylesheet" href="stylesheets/contacts.css">
+  <link rel="stylesheet" href="stylesheets/adaptive.css">
+  <script src="javascripts/scripts.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="images/Logo.webp" alt="Logo">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <a href="afisha.html">АФИША И БИЛЕТЫ</a>
+                    <a href="repertuar.html">РЕПЕРТУАР</a>
+                    <a href="about.html">О ТЕАТРЕ</a>
+                    <a href="visit.html">ВИЗИТ В ТЕАТР</a>
+                    <a href="projects.html">ПРОЕКТЫ</a>
+                    <a href="contacts.html">КОНТАКТЫ</a>
+                    <a href="buffet.html">БУФЕТ</a>
+                    <a href="souvenir.html">СУВЕНИРНАЯ ЛАВКА</a>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- HERO -->
-    <section class="page-hero">
-      <div class="container">
-        <h1 class="section-title">Контакты</h1>
-        <p class="lead">
-          Здесь вы найдете информацию о кассе, службах поддержки и реквизитах
-          компании.
-        </p>
-      </div>
-    </section>
+    <div class="container">
+        
+        <section class="welcome-section">
+            <div class="welcome-text">
+                <h2>Добро пожаловать в раздел «КОНТАКТЫ»</h2>
+                <p>Здесь вы найдете информацию о кассе, службах поддержки и реквизитах нашей компании.</p>
+            </div>
+            <div class="welcome-banner">
+                <img src="images/con1.webp" alt="Баннер">
+            </div>
+        </section>
 
-    <!-- КАССА -->
-    <section class="contacts-section">
-      <div class="container">
-        <h2>Касса</h2>
-        <p><b>Адрес:</b> Москва, ул. Театральная, 1</p>
-        <p><b>Часы работы:</b> ежедневно с 10:00 до 20:00</p>
-        <p><b>Телефон кассы:</b> +7 (499) 202-08-26</p>
-        <p><b>E-mail:</b> corp@teatr.ru</p>
-      </div>
-    </section>
+        <section class="kassa-section">
+            <h2>КАССА</h2>
+            <div class="kassa-content">
+                <div class="kassa-img">
+                    <img src="images/con2.webp" alt="Касса">
+                </div>
+                <div class="kassa-info">
+                    <p><strong>Адрес:</strong> Москва, ул. Театральная, 1</p>
+                    <p><strong>Часы работы:</strong> ежедневно с 10:00 до 20:00</p>
+                    <p><strong>Телефон кассы:</strong> +7 (499) 202-08-26</p>
+                    <p><strong>E-mail:</strong> corp@teatr.ru</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- ОНЛАЙН-БИЛЕТЫ -->
-    <section class="contacts-section alt">
-      <div class="container">
-        <h2>Поддержка по продаже онлайн-билетов</h2>
-        <p>
-          Если у вас возникли вопросы при покупке билетов онлайн или вы хотите
-          уточнить статус заказа:
-        </p>
-        <p><b>Телефон:</b> +7 (499) 202-08-26 (доб. 2)</p>
-        <p><b>E-mail:</b> tickets@teatr.ru</p>
-        <p>
-          По вопросам возврата и обмена билетов обращайтесь не позднее чем за 24
-          ч до начала спектакля.
-        </p>
-      </div>
-    </section>
+        <section class="form-section">
+            <h2>ОНЛАЙН ПРИОБРЕТЕНИЕ БИЛЕТОВ</h2>
+            <form>
+                <div class="form-grid">
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="text" placeholder="Фамилия">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Отчество">
+                        
+                        <div style="position: relative;">
+                            <select>
+                                <option>Выбор спектакля</option>
+                                <option>Гамлет</option>
+                                <option>Вишневый сад</option>
+                            </select>
+                        </div>
 
-    <!-- КОМПАНИЯ -->
-    <section class="contacts-section">
-      <div class="container">
-        <h2>Контакты компании</h2>
-        <p><b>Телефон:</b> +7 (499) 202-08-26 (доб. 1)</p>
-        <p><b>E-mail:</b> corp@teatr.ru</p>
-        <p><b>Фактический адрес:</b> Москва, ул. Театральная, 1</p>
-        <p>
-          <b>Юридический адрес:</b> 123456, г. Москва, ул. Театральная, д. 1а
-        </p>
+                        <div class="date-time-row">
+                            <input type="text" placeholder="Дата" onfocus="(this.type='date')" onblur="(this.type='text')">
+                            <input type="text" placeholder="Время" onfocus="(this.type='time')" onblur="(this.type='text')">
+                        </div>
 
-        <h3>Генеральный директор</h3>
-        <p><b>Бобров Богдан Ярославович</b></p>
-        <p><b>Телефон:</b> +7 (499) 202-08-26 (доб. 1)</p>
-        <p><b>E-mail:</b> corp@teatr.ru</p>
-      </div>
-    </section>
+                        <select>
+                            <option>Выбор доп. услуг</option>
+                            <option>Программка</option>
+                            <option>Бинокль</option>
+                        </select>
+                    </div>
 
-    <!-- РЕКВИЗИТЫ -->
-    <section class="contacts-section alt">
-      <div class="container">
-        <h2>Реквизиты компании</h2>
-        <p>ООО «ЗлоТеатр»</p>
-        <p>ИНН 7701234567 КПП 770101001</p>
-        <p>ОГРН 1227700001234</p>
-        <p>
-          Расчётный счёт 40702810400000012345 в ПАО «Банк Культура» г. Москва
-        </p>
-        <p>БИК 044525225 Корр. счёт 30101810400000000225</p>
-      </div>
-    </section>
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="tel" placeholder="Телефон">
 
-    <!-- ФОРМА -->
-    <section class="contacts-form">
-      <div class="container">
-        <h2>Форма обратной связи</h2>
-        <p class="hint">
-          Ваше письмо будет рассмотрено в течение 2 рабочих дней, и мы
-          обязательно свяжемся с вами.
-        </p>
-        <form id="feedbackForm">
-          <div class="grid-2">
-            <input type="text" name="surname" placeholder="Фамилия" required />
-            <input type="text" name="name" placeholder="Имя" required />
-            <input type="text" name="patronymic" placeholder="Отчество" />
-            <input type="tel" name="phone" placeholder="Телефон" required />
-            <input type="email" name="email" placeholder="E-mail" required />
-            <input type="text" name="subject" placeholder="Тема обращения" />
-          </div>
-          <textarea name="message" rows="5" placeholder="Сообщение"></textarea>
-          <button type="submit" class="btn">Отправить</button>
-        </form>
-      </div>
-    </section>
+<input type="email" placeholder="E-mail">
+                        
+                        <div class="seat-map">
+                            <p>Выбор мест</p>
+                            <img src="images/con6.webp" alt="Схема зала" style="margin-top:10px;">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn-submit">Отправить</button>
+            </form>
+        </section><section class="support-section" style="margin-top: 50px;">
+            <h3 style="color: #b30000; font-weight: bold;">Поддержка по продаже онлайн-билетов</h3>
+            <p>Если у вас возникли вопросы при покупке билетов онлайн или вы хотите уточнить статус заказа, свяжитесь с нашей службой поддержки:</p>
+            <p><strong>Телефон:</strong> +7 (499) 202-08-26 (доб. 2)</p>
+            <p><strong>E-mail:</strong> tickets@teatr.ru</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">По вопросам возврата и обмена билетов обращайтесь не позднее, чем за 24 часа до начала спектакля.</p>
+        </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__col">
-          <h4>Контакты</h4>
-          <ul>
-            <li>
-              <a href="contacts.html" class="is-active">Контакты театра</a>
-            </li>
-            <li><a href="afisha.html">Афиша и билеты</a></li>
-            <li><a href="projects.html">Проекты</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Мы в соцсетях</h4>
-          <div class="socials">
-            <a href="#"><img src="images/icons/vk.svg" alt="VK" /></a>
-            <a href="#"
-              ><img src="images/icons/telegram.svg" alt="Telegram"
-            /></a>
-            <a href="#"><img src="images/icons/youtube.svg" alt="YouTube" /></a>
-          </div>
-        </div>
-      </div>
-      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
-    </footer>
+        <section class="company-contacts">
+            <h2>КОНТАКТЫ КОМПАНИИ</h2>
+            <div class="contacts-wrapper">
+                <div class="contacts-text">
+                    <p><strong>Телефон:</strong> +7 (499) 202-08-26 (доб. 1)</p>
+                    <p><strong>E-mail:</strong> corp@teatr.ru</p>
+                    <p><strong>Фактический адрес:</strong> Москва, ул. Театральная, 1</p>
+                    <p><strong>Юридический адрес:</strong> 123456, г. Москва, ул. Театральная, д. 1а</p>
 
-    <script src="javascripts/contacts.js"></script>
-  </body>
+                    <span class="bold-label" style="font-size: 1.2rem;">Генеральный директор</span>
+                    <p>Бобров Богдан Ярославович</p>
+                    <p><strong>Телефон:</strong> +7 (499) 202-08-26 (доб. 1)</p>
+                    <p><strong>E-mail:</strong> corp@teatr.ru</p>
+                </div>
+                <div class="contacts-img">
+                    <img src="images/con3.webp" alt="Арт">
+                </div>
+            </div>
+        </section>
+
+        <section class="socials-section">
+            <h3>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+            <div class="socials-grid">
+                <div class="social-card"><img src="images/convk.webp" alt="VK"></div>
+                <div class="social-card"><img src="images/contg.webp" alt="TG"></div>
+                <div class="social-card"><img src="images/con4.webp" alt="Icon"></div>
+                <div class="social-card"><img src="images/con4.webp" alt="Icon"></div>
+                <div class="social-card"><img src="images/con4.webp" alt="Icon"></div>
+            </div>
+        </section>
+
+        <section class="form-section feedback-form">
+            <h2>ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
+            <form>
+                <div class="form-grid">
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="text" placeholder="Фамилия">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Отчество">
+                        <input type="text" placeholder="Тема обращения">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="tel" placeholder="Телефон">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+
+<div class="full-width">
+                        <textarea placeholder="Сообщение" style="margin-top: 20px;"></textarea>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                    <p class="disclaimer">Ваше письмо будет рассмотрено в течение 2 рабочих<br>дней, и мы обязательно свяжемся с вами.</p>
+                    <button type="button" class="btn-submit" style="margin: 0;">Отправить</button>
+                </div>
+            </form>
+        </section><section class="requisites-section">
+            <h2>РЕКВИЗИТЫ КОМПАНИИ</h2>
+            <div class="requisites-wrapper">
+                <div class="requisites-text">
+                    <p>ООО «ЗлоТеатр»</p>
+                    <p>Юридический адрес: 123456, г. Москва, ул. Театральная, д. 1а</p>
+                    <p>ИНН: 7701234567</p>
+                    <p>КПП: 770101001</p>
+                    <p>ОГРН: 1227700001234</p>
+                    <p>Расчётный счёт: 407028104000000012345</p>
+                    <p>Банк: ПАО «Банк Культура» г. Москва</p>
+                    <p>БИК: 044525225</p>
+                    <p>Корр. счёт: 30101810400000000225</p>
+                </div>
+                <div class="requisites-img">
+                    <img src="images/con5.webp" alt="Реквизиты">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-col" style="text-align: center;">
+                    <div class="logo">
+                        <img src="images/Logo.webp" alt="Logo">
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Главная</h4>
+                    <ul>
+                        <li><a href="#">Хиты сезона</a></li>
+                        <li><a href="#">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Афиша и билеты</h4>
+                    <ul>
+                        <li><a href="#">Хиты сезона</a></li>
+                        <li><a href="#">Афиша</a></li>
+                        <li><a href="#">Касса</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Репертуар</h4>
+                    <ul>
+                        <li><a href="#">Медиа</a></li>
+                        <li><a href="#">Персоналии</a></li>
+                        <li><a href="#">Проекты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>О театре</h4>
+                    <ul>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Для СМИ</a></li>
+                        <li><a href="#">Спонсоры</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="#">Касса</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
 </html>

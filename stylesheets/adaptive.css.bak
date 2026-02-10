@@ -1,0 +1,93 @@
+
+/* =========================================================
+   Mobile adaptives (minimal, safe overrides)
+   This project is desktop-first; these overrides make it
+   usable on phones without redesigning the pages.
+   ========================================================= */
+
+/* Baseline */
+html { -webkit-text-size-adjust: 100%; }
+body { overflow-x: hidden; }
+
+img, video, canvas, svg { max-width: 100%; height: auto; }
+
+/* Active nav state (shared) */
+.main-nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* =============== <= 768px (tablet/phone) =============== */
+@media (max-width: 768px) {
+  /* General page padding */
+  .inner-content { padding: 0 16px; }
+
+  /* Make border frames lighter on small screens */
+  .page-wrapper { border-width: 8px; }
+
+  /* Header: stack logo + nav */
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  /* Common titles */
+  .section-title,
+  .page-title {
+    font-size: 22px;
+    margin: 24px 0;
+    letter-spacing: 2px;
+  }
+
+  /* INDEX: promo block becomes vertical */
+  .promo-flex {
+    flex-direction: column;
+    height: auto;
+  }
+  .promo-img-small { height: 220px; }
+  .promo-img-big { height: 320px; }
+
+  /* Footers: collapse wide grids */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 12px;
+  }
+  .f-logo { grid-column: 1 / -1; }
+
+  /* About page: very large title */
+  .gothic-title { font-size: 44px; }
+  .hero-section { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .hero-image { width: 100%; }
+
+  /* Afisha: 4 columns -> 2 columns */
+  .afisha-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 14px; }
+}
+
+/* =============== <= 480px (phones) =============== */
+@media (max-width: 480px) {
+  .inner-content { padding: 0 12px; }
+  .page-wrapper { border-width: 4px; }
+
+  .logo-box img { height: 44px; }
+  .main-nav a { font-size: 10px; }
+
+  /* INDEX */
+  .hit-card { width: 170px; height: 250px; }
+  .red-btn { padding: 12px 32px; }
+
+  /* About */
+  .gothic-title { font-size: 34px; }
+  .main-quote h2 { font-size: 26px; }
+
+  /* Afisha: 2 columns -> 1 column */
+  .afisha-grid { grid-template-columns: 1fr; }
+
+  /* Footer: single column */
+  .footer-grid { grid-template-columns: 1fr; }
+}

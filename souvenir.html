@@ -1,33 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сувенирная лавка</title>
-    <script src="javascripts/js-basics.js"></script>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">ЗлоТеатр - главная</a></li>
-          <li><a href="afisha.html">Афиша и билеты</a></li>
-          <li><a href="repertuar.html">Репертуар</a></li>
-          <li><a href="about.html">О театре</a></li>
-          <li><a href="visit.html">Визит в театр</a></li>
-          <li><a href="projects.html">Проекты</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="buffet.html">Буфет</a></li>
-          <li><a href="souvenir.html">Сувенирная лавка</a></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗЛО ТЕАТР - Сувенирная Лавка</title>
+  <link rel="stylesheet" href="stylesheets/souvenir.css">
+  <link rel="stylesheet" href="stylesheets/adaptive.css">
+  <script src="javascripts/scripts.js" defer></script>
+</head>
+<body>
+     <title>ЗЛО ТЕАТР - Сувенирная Лавка</title>
+    <div class="souvenir-wrapper">
+        <header class="souvenir-header">
+            <div class="container header-container">
+                
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.webp" alt="Логотип ЗЛО ТЕАТР" class="logo-img">
+                </a>
 
-    <main>
-      <!-- Уникальный контент страницы здесь -->
-      <h1>ЗлоТеатр - Сувенирная лавка</h1>
-      <p>Контент для страницы будет вставлен здесь, но чуточку позже</p>
-    </main>
-  </body>
+                <nav class="souvenir-nav">
+                    <ul>
+                        <li><a href="afisha.html">АФИША И БИЛЕТЫ</a></li>
+                        <li><a href="repertuar.html">РЕПЕРТУАР</a></li>
+                        <li><a href="about.html">О ТЕАТРЕ</a></li>
+                        <li><a href="visit.html">ВИЗИТ В ТЕАТР</a></li>
+                        <li><a href="projects.html">ПРОЕКТЫ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                        <li><a href="buffet.html">БУФЕТ</a></li>
+                        <li class="active"><a href="shop.html">СУВЕНИРНАЯ ЛАВКА</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+       <section class="souvenir-hero">
+    <div class="hero-overlay"></div>
+    <div class="mask-container">
+        <img src="images/mask2.webp" alt="Маска" class="mask-img">
+    </div>
+</section>
+
+       <main class="souvenir-main">
+    <div class="container">
+        <h1 class="page-title">КОЛЛЕКЦИОННЫЕ, ПОДАРОЧНЫЕ ТОВАРЫ</h1>
+
+        <div class="products-grid">
+            
+            <div class="grid-row top-row">
+                <div class="product-item large-item">
+                     <img src="images/disk.webp" alt="Винил">
+                </div>
+
+                <div class="small-items-group">
+                    <div class="product-item small-item">
+                        <div class="p-image">
+                            <img src="images/pe.webp" alt="Сертификат">
+                            <span class="size-tag"></span>
+                        </div>
+                        <div class="p-info">
+                            <h3>Сертификат<br>«Подарок ночи»</h3>
+                            <div class="p-bottom">
+                                <span class="price">от 500 ₽</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item small-item">
+                        <div class="p-image">
+                            <img src="images/fla.webp" alt="Значок">
+                            <span class="size-tag"></span>
+                        </div>
+                        <div class="p-info">
+                            <h3>Значок шелковый<br>«Сияние мрака»</h3>
+                            <div class="p-bottom">
+                                <span class="price">750 ₽</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item small-item">
+                        <div class="p-image">
+                            <img src="images/pla.webp" alt="Книга">
+                            <span class="size-tag"></span>
+                        </div>
+                        <div class="p-info">
+                            <h3>Книга о Злотеатре<br>«Режиссёр Судеб»</h3>
+                            <div class="p-bottom">
+                                <span class="price">2200 ₽</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-row bottom-row">
+                <div class="small-items-group">
+                    <div class="product-item small-item">
+                        <div class="p-image">
+                            <img src="images/hans_cherep2.webp" alt="Статуэтка">
+                            <span class="size-tag"></span>
+                        </div>
+                        <div class="p-info">
+                            <h3>Статуэтка<br>«ЗЛОтеатр»</h3>
+                            <div class="p-bottom">
+                                <span class="price">1900 ₽</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item small-item">
+                        <div class="p-image">
+                            <img src="images/platok.webp" alt="Платок">
+                            <span class="size-tag"></span>
+                        </div>
+                        <div class="p-info">
+                            <h3>Платок шелковый<br>«Крики души»</h3>
+                            <div class="p-bottom">
+                                <span class="price">750 ₽</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item small-item">
+                        <div class="p-image">
+                            <img src="images/shop.webp" alt="Бокс"><span class="size-tag"></span>
+                        </div>
+                        <div class="p-info">
+                            <h3>Сюрприз бокс<br>«Дары преисподней»</h3>
+                            <div class="p-bottom">
+                                <span class="price">450 ₽</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item large-item">
+                    <img src="images/card.webp" alt="Карты">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+        <footer class="souvenir-footer">
+            <div class="container footer-grid">
+                <div class="footer-logo">
+                    <img src="images/Logo.webp" alt="Логотип" class="logo-img-small" style="background: #ddd; width: 40px; height: 50px; display: block;">
+                    <div class="logo-text">
+                        <span>ЗЛО</span>
+                        <span>ТЕАТР</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>ГЛАВНАЯ</h4>
+                    <a href="hits.html">Хиты сезона</a>
+                    <a href="sales.html">Акции</a>
+                </div>
+                <div class="footer-col">
+                    <h4>АФИША И БИЛЕТЫ</h4><a href="#">Хиты сезона</a>
+                    <a href="#">Афиша</a>
+                    <a href="#">Касса</a>
+                </div>
+                <div class="footer-col">
+                    <h4>РЕПЕРТУАР</h4>
+                    <a href="#">Медиа</a>
+                    <a href="#">Персоналии</a>
+                    <a href="#">Газеты</a>
+                </div>
+                <div class="footer-col">
+                    <h4>О ТЕАТРЕ</h4>
+                    <a href="#">История</a>
+                    <a href="#">Для СМИ</a>
+                    <a href="#">Персоналии</a>
+                    <a href="#">Спонсоры</a>
+                </div>
+                <div class="footer-col">
+                    <h4>ВИЗИТ В ТЕАТР</h4>
+                    <a href="#">Как добраться</a>
+                    <a href="#">Правила посещения</a>
+                    <a href="#">Зрителям с ОВЗ</a>
+                    <a href="#">Как купить билет</a>
+                    <a href="#">Экскурсия по театру</a>
+                </div>
+                <div class="footer-col">
+                    <h4>ПРОЕКТЫ</h4>
+                    <a href="#">Анонсы</a>
+                    <a href="#">Архив</a>
+                </div>
+                <div class="footer-col">
+                    <h4>КОНТАКТЫ</h4>
+                    <a href="#">Касса</a>
+                    <a href="#">Контакты театра</a>
+                    <a href="#">Реквизиты компании</a>
+                </div>
+                <div class="footer-col">
+                    <h4>БУФЕТ</h4>
+                    <a href="#">Меню</a>
+                    <a href="#">Предзаказ блюд</a>
+                </div>
+                <div class="footer-col">
+                    <h4>СУВЕНИРНАЯ ЛАВКА</h4>
+                    <a href="#">Магазин</a>
+                    <a href="#">Корзина</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>

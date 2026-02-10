@@ -1,242 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Репертуар</title>
-    <script src="javascripts/js-basics.js"></script>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-  </head>
-  <body class="theme-light">
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container header__inner">
-        <a href="index.html" class="logo">ZLOTHEATRE</a>
-        <nav class="nav">
-          <a href="afisha.html">Афиша и билеты</a>
-          <a class="is-active" href="repertuar.html">Репертуар</a>
-          <a href="about.html">О театре</a>
-          <a href="visit.html">Визит в театр</a>
-          <a href="projects.html">Проекты</a>
-          <a href="contacts.html">Контакты</a>
-          <a href="buffet.html">Буфет</a>
-          <a href="souvenir.html">Сувенирная лавка</a>
-        </nav>
-      </div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗЛО ТЕАТР - Репертуар</title>
+  <link rel="stylesheet" href="stylesheets/repertuar.css">
+  <link rel="stylesheet" href="stylesheets/adaptive.css">
+  <script src="javascripts/scripts.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="inner-content header-row">
+            <div class="logo-box">
+                <img src="images/Logo.webp" alt="ЗЛО ТЕАТР">
+            </div>
+            <nav class="main-nav">
+                <a href="afisha.html">АФИША И БИЛЕТЫ</a>
+                <a href="repertuar.html" class="active">РЕПЕРТУАР</a>
+                <a href="about.html">О ТЕАТРЕ</a>
+                <a href="visit.html">ВИЗИТ В ТЕАТР</a>
+                <a href="projects.html">ПРОЕКТЫ</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="buffet.html">БУФЕТ</a>
+                <a href="souvenir.html">СУВЕНИРНАЯ ЛАВКА</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- HERO -->
-    <section class="page-hero">
-      <div class="container hero__grid">
-        <div class="hero__text">
-          <h1>Репертуар</h1>
-          <p class="lead">Революционный театральный проект</p>
-          <div class="columns">
-            <p>
-              Наш репертуар — это территория напряжения, эмоций и внутреннего
-              надлома. Мы ставим истории, которые держат зрителя в напряжении до
-              последнего слова.
+<main class="page-wrapper">
+        <section class="container repertoire-grid">
+            
+            <div class="column left-col">
+                <div class="grid-item title-area">
+                    <h1 class="gothic-title">Репертуар</h1>
+                </div>
+                
+                <div class="grid-item landscape-image-area">
+                    <img src="images/rev.webp" alt="Landscape" class="side-img">
+                </div>
+
+                <div class="grid-item final-text-area">
+                    <p><strong>НАШИ ПЬЕСЫ НЕ РАССКАЗЫВАЮТ ИСТОРИИ. ОНИ ВЫТАСКИВАЮТ ЧУВСТВА.</strong></p>
+                    <p>И ЕСЛИ ТЫ ПОКИНУЛ ЗАЛ, НИЧЕГО НЕ ИСПЫТАВ, ЗНАЧИТ, ТЫ БЫЛ ГДЕ-ТО НЕ У НАС.</p>
+                </div>
+            </div>
+
+            <div class="column right-col">
+                <div class="grid-item hero-image-area">
+                    <img src="images/glass.webp" alt="Eyes" class="eyes-img">
+                </div>
+
+                <div class="grid-item hero-text-overlay">
+                    <h2>РЕВОЛЮЦИОННЫЙ ТЕАТРАЛЬНЫЙ ПРОЕКТ</h2>
+                    <p>Наш репертуар — это территория напряжения, эмоций и внутреннего надлома. Мы ставим истории, которые держат зрителя в напряжении до последнего слова.</p>
+                    <p>Здесь нет места иллюзиям — только обнажённая правда человеческой природы, накал страстей и тишина после финального занавеса.</p>
+                </div>
+
+                <div class="grid-item main-text-area">
+                    <p>Репертуар «Злотеатра» — это подборка спектаклей. Это анатомия страха, каталог личных границ и зеркало, в котором зритель видит самого себя — впервые по-настоящему.</p>
+                    <p>Каждая постановка в нашем театре создаётся как психологический лабиринт, в который ты входишь один. Здесь нет привычного разделения на сцену и зал: пространство работает против предсказуемости, а сюжет — против логики.</p>
+                </div>
+
+                <div class="grid-item clown-image-area">
+                    <img src="images/clown.webp" alt="Clown" class="side-img">
+                </div>
+            </div>
+
+        </section>
+
+        <div class="quote-divider" style="background-image: linear-gradient(rgba(88, 19, 19, 0.7), rgba(0, 0, 0, 0.7)), url('images/back.webp');">
+            <div class="container" style="background: transparent !important;">
+                <h2 class="quote-text">ТО, ЧТО НЕЛЬЗЯ ОБЪЯСНИТЬ СЛОВАМИ, МОЖНО ПОКАЗАТЬ.</h2>
+            </div>
+        </div>
+
+        <section class="media-section">
+    <div class="media-container">
+        <div class="media-header">
+            <p class="section-desc">
+                В этом разделе вы найдёте видеодокументации наших постановок, кадры с репетиций, интервью 
+                с создателями и зрителями, а также зафиксированные моменты погружения — те самые взгляды, 
+                дрожащие руки, паузы, в которых слышно сердце.
             </p>
-            <p>
-              Здесь нет места иллюзиям — только обнажённая правда человеческой
-              природы, накал страстей и тишина после финального занавеса.
-            </p>
-          </div>
-          <blockquote class="punch">
-            Наши пьесы не рассказывают истории. Они вытаскивают чувства. Если ты
-            покинул зал, ничего не испытав — значит, ты был где-то не у нас.
-          </blockquote>
         </div>
-        <figure class="hero__image">
-          <img src="images/repertuar/hero.jpg" alt="Сцена ZLOTHEATRE" />
-        </figure>
-      </div>
-    </section>
 
-    <!-- MEDIA STRIP -->
-    <section class="media-strip">
-      <div class="container">
-        <h2 class="section-title">Медиа</h2>
-        <p class="section-subtitle">
-          Видеодокументации постановок, кадры с репетиций, интервью и моменты
-          погружения.
-        </p>
-      </div>
-      <div class="media-strip__row">
-        <img src="images/repertuar/media-1.jpg" alt="" />
-        <img src="images/repertuar/media-2.jpg" alt="" />
-        <img src="images/repertuar/media-3.jpg" alt="" />
-      </div>
-    </section>
+        <div class="media-display">
+            <div class="media-card side-card">
+                <img src="images/hihi.webp" alt="Scene 1">
+            </div>
+            
+            <div class="media-card central-card">
+                <img src="images/rev.webp" alt="Central Scene">
+            </div>
 
-    <!-- PERSONS / ТРУППА -->
-    <section class="persons">
-      <div class="container">
-        <h2 class="section-title">Персоналии</h2>
-        <h3 class="section-subtitle">Труппа</h3>
-
-        <div class="cards cards--persons">
-          <!-- карточка троппы -->
-          <article class="p-card">
-            <img
-              class="p-card__img"
-              src="images/repertuar/truppa-1.jpg"
-              alt="Актёр 1"
-            />
-            <h4 class="p-card__name">Актёр 1</h4>
-            <p class="p-card__role">Ведущий артист</p>
-          </article>
-
-          <article class="p-card">
-            <img
-              class="p-card__img"
-              src="images/repertuar/truppa-2.jpg"
-              alt="Актриса 2"
-            />
-            <h4 class="p-card__name">Актриса 2</h4>
-            <p class="p-card__role">Артистка</p>
-          </article>
-
-          <article class="p-card">
-            <img
-              class="p-card__img"
-              src="images/repertuar/truppa-3.jpg"
-              alt="Актёр 3"
-            />
-            <h4 class="p-card__name">Актёр 3</h4>
-            <p class="p-card__role">Артист</p>
-          </article>
-
-          <article class="p-card">
-            <img
-              class="p-card__img"
-              src="images/repertuar/truppa-4.jpg"
-              alt="Актриса 4"
-            />
-            <h4 class="p-card__name">Актриса 4</h4>
-            <p class="p-card__role">Солистка</p>
-          </article>
-
-          <article class="p-card">
-            <img
-              class="p-card__img"
-              src="images/repertuar/truppa-5.jpg"
-              alt="Актёр 5"
-            />
-            <h4 class="p-card__name">Актёр 5</h4>
-            <p class="p-card__role">Артист</p>
-          </article>
+            <div class="media-card side-card">
+                <img src="images/faces.webp" alt="Scene 2">
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- MEMORY -->
-    <section class="memory">
-      <div class="container">
-        <h2 class="section-title">Память театра</h2>
-        <div class="cards cards--memory">
-          <img src="images/repertuar/memory-1.jpg" alt="" />
-          <img src="images/repertuar/memory-2.jpg" alt="" />
-          <img src="images/repertuar/memory-3.jpg" alt="" />
-          <img src="images/repertuar/memory-4.jpg" alt="" />
-          <img src="images/repertuar/memory-5.jpg" alt="" />
-        </div>
-      </div>
-    </section>
 
-    <!-- ORCHESTRA -->
-    <section class="orchestra">
-      <div class="container">
-        <h2 class="section-title">Оркестр театра</h2>
-        <div class="orchestra__grid">
-          <figure class="orchestra__cover">
-            <img
-              src="images/repertuar/orchestra-cover.jpg"
-              alt="Оркестр театра"
-            />
-          </figure>
-          <div class="orchestra__list">
-            <article class="mini-card">
-              <img src="images/repertuar/orch-1.jpg" alt="" />
-              <h4>Струнная группа</h4>
-            </article>
-            <article class="mini-card">
-              <img src="images/repertuar/orch-2.jpg" alt="" />
-              <h4>Духовая группа</h4>
-            </article>
-            <article class="mini-card">
-              <img src="images/repertuar/orch-3.jpg" alt="" />
-              <h4>Ударные</h4>
-            </article>
-            <article class="mini-card">
-              <img src="images/repertuar/orch-4.jpg" alt="" />
-              <h4>Клавишные</h4>
-            </article>
-            <article class="mini-card">
-              <img src="images/repertuar/orch-5.jpg" alt="" />
-              <h4>Солисты</h4>
-            </article>
-            <article class="mini-card">
-              <img src="images/repertuar/orch-6.jpg" alt="" />
-              <h4>Дирижёры</h4>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="container personals">
+            <h3>ПЕРСОНАЛИИ</h3>
+            
+            <h4>ТРУППА</h4>
+            <div class="persons-grid small">
+                <div class="person-card decor-star"><img src="images/grupp1.webp"></div>
+                <div class="person-card decor-star"><img src="images/grupp2.webp"></div>
+                <div class="person-card decor-star"><img src="images/grupp3.webp"></div>
+                <div class="person-card decor-star"><img src="images/grupp4.webp"></div>
+                <div class="person-card decor-star"><img src="images/grupp5.webp"></div>
+            </div>
 
-    <!-- CREW -->
-    <section class="crew">
-      <div class="container">
-        <h2 class="section-title">Режиссура и постановочная группа</h2>
-        <div class="cards cards--crew">
-          <article class="crew-card">
-            <img src="images/repertuar/crew-1.jpg" alt="" />
-            <h4>Главный режиссёр</h4>
-          </article>
-          <article class="crew-card">
-            <img src="images/repertuar/crew-2.jpg" alt="" />
-            <h4>Художник-постановщик</h4>
-          </article>
-          <article class="crew-card">
-            <img src="images/repertuar/crew-3.jpg" alt="" />
-            <h4>Звукорежиссёр</h4>
-          </article>
-        </div>
-      </div>
-    </section>
+            <h4>РЕЖИССУРА И ПОСТАНОВОЧНАЯ ГРУППА</h4>
+            <div class="persons-grid large">
+                <div class="person-card"><img src="images/rej1.webp"></div>
+                <div class="person-card"><img src="images/rej2.webp"></div>
+                <div class="person-card"><img src="images/rej3.webp"></div>
+            </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__col">
-          <h4>Афиша и билеты</h4>
-          <ul>
-            <li><a href="afisha.html">Афиша</a></li>
-            <li><a href="hits.html">Хиты сезона</a></li>
-            <li><a href="cashdesk.html">Касса</a></li>
-          </ul>
+            <h4 class="section-title-small">ОРКЕСТР ТЕАТРА</h4>
+<div class="orchestra-layout">
+    <div class="conductor-box">
+        <img src="images/ork1.webp" alt="Дирижер" class="conductor-img">
+    </div>
+
+    <div class="musicians-grid-layout">
+        <div class="person-card decor-star"><img src="images/ork2.webp" alt=""></div>
+        <div class="person-card decor-star"><img src="images/ork3.webp" alt=""></div>
+        <div class="person-card decor-star"><img src="images/ork4.webp" alt=""></div>
+        <div class="person-card decor-star"><img src="images/ork5.webp" alt=""></div>
+        <div class="person-card decor-star"><img src="images/ork6.webp" alt=""></div>
+        <div class="person-card decor-star"><img src="images/ork7.webp" alt=""></div>
+    </div>
+</div>
+
+            <h4>ПАМЯТЬ ТЕАТРА</h4>
+            <div class="persons-grid small">
+                <div class="person-card decor-star"><img src="images/pam1.webp"></div>
+                <div class="person-card decor-star"><img src="images/pam2.webp"></div>
+                <div class="person-card decor-star"><img src="images/pam3.webp"></div>
+                <div class="person-card decor-star"><img src="images/pam4.webp"></div>
+                <div class="person-card decor-star"><img src="images/pam5.webp"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/Logo.webp" alt="ЗЛО ТЕАТР Лого">
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="nav-column">
+                    <span class="column-title">ГЛАВНАЯ</span>
+                    <a href="#">Хиты сезона</a>
+                    <a href="#">Акции</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">АФИША И БИЛЕТЫ</span>
+                    <a href="#">Хиты сезона</a>
+                    <a href="#">Афиша</a>
+                    <a href="#">Касса</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">РЕПЕРТУАР</span>
+                    <a href="#">Медиа</a>
+                    <a href="#">Персоналии</a>
+                    <a href="#">Проекты</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">О ТЕАТРЕ</span>
+                    <a href="#">История</a>
+                    <a href="#">Для СМИ</a>
+                    <a href="#">Спонсоры</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">ВИЗИТ В ТЕАТР</span>
+                    <a href="#">Как добраться</a>
+
+
+<a href="#">Правила посещения</a>
+                    <a href="#">Зрителям с ОВЗ</a>
+                    <a href="#">Как купить билет</a>
+                    <a href="#">Экскурсия по театру</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">ПРОЕКТЫ</span>
+                    <a href="#">Анонсы</a>
+                    <a href="#">Архив</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">КОНТАКТЫ</span>
+                    <a href="#">Касса</a>
+                    <a href="#">Контакты театра</a>
+                    <a href="#">Реквизиты компании</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">БУФЕТ</span>
+                    <a href="#">Меню</a>
+                    <a href="#">Предзаказ блюд</a>
+                </div>
+                <div class="nav-column">
+                    <span class="column-title">СУВЕНИРНАЯ ЛАВКА</span>
+                    <a href="#">Магазин</a>
+                    <a href="#">Корзина</a>
+                </div>
+            </div>
         </div>
-        <div class="footer__col">
-          <h4>О театре</h4>
-          <ul>
-            <li><a href="history.html">История</a></li>
-            <li><a href="press.html">Для СМИ</a></li>
-            <li><a href="sponsors.html">Спонсоры</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Контакты</h4>
-          <ul>
-            <li><a href="contacts.html">Контакты театра</a></li>
-            <li><a href="buffet.html">Буфет</a></li>
-            <li><a href="souvenir.html">Сувенирная лавка</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
     </footer>
 
-    <script src="javascripts/repertuar.js"></script>
-  </body>
+</body>
 </html>

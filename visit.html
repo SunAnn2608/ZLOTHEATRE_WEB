@@ -1,349 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Визит в театр</title>
-    <script src="javascripts/js-basics.js"></script>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-  </head>
-  <body class="theme-light">
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container header__inner">
-        <a class="logo" href="index.html">ZLOTHEATRE</a>
-        <nav class="nav">
-          <a href="afisha.html">Афиша и билеты</a>
-          <a href="repertuar.html">Репертуар</a>
-          <a href="about.html">О театре</a>
-          <a class="is-active" href="visit.html">Визит в театр</a>
-          <a href="projects.html">Проекты</a>
-          <a href="contacts.html">Контакты</a>
-          <a href="buffet.html">Буфет</a>
-          <a href="souvenir.html">Сувенирная лавка</a>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗлоТеатр — Визит</title>
+  <link rel="stylesheet" href="stylesheets/visit.css">
+  <link rel="stylesheet" href="stylesheets/adaptive.css">
+  <script src="javascripts/scripts.js" defer></script>
+</head>
+<body class="theme-light">
+
+   <header class="main-header">
+    <div class="container header-row">
+        <div class="logo-box">
+            <a href="index.html">
+                <img src="images/Logo.webp" alt="ЗлоТеатр">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="afisha.html">АФИША И БИЛЕТЫ</a>
+            <a href="repertuar.html">РЕПЕРТУАР</a>
+            <a href="about.html">О ТЕАТРЕ</a>
+            <a href="visit.html" class="active">ВИЗИТ В ТЕАТР</a>
+            <a href="projects.html">ПРОЕКТЫ</a>
+            <a href="contacts.html">КОНТАКТЫ</a>
+            <a href="buffet.html">БУФЕТ</a>
+            <a href="souvenir.html">СУВЕНИРНАЯ ЛАВКА</a>
         </nav>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <!-- HERO -->
-    <section class="page-hero">
-      <div class="container hero__wrap">
-        <h1>Как добраться?</h1>
-        <figure class="hero__image">
-          <img src="images/visit/hero-map.jpg" alt="Карта проезда к театру" />
-        </figure>
-        <p class="sub">
-          Адрес: Москва, Театральная, 1 • м. Театральная — 4 мин пешком
-        </p>
-      </div>
-    </section>
-
-    <!-- RULES -->
-    <section class="rules" id="rules">
-      <div class="container">
-        <h2 class="section-title center">Культура посещения</h2>
-
-        <div class="rules__intro">
-          <p>
-            <b>Дорогие зрители!</b> Наш театр — взрослый (18+). Чтобы сохранить
-            атмосферу, просим соблюдать правила.
-          </p>
-          <p class="muted">
-            Соблюдение этих правил — уважение к актёрам и зрителям. Спасибо!
-          </p>
-        </div>
-
-        <div class="accordion">
-          <details class="acc" open>
-            <summary>Время, пунктуальность и антракт</summary>
-            <div class="acc__body">
-              Приходите за 20–30 минут, опоздавших не сажаем до антракта.
-              Покидать зал во время действия не рекомендуется.
+    <main>
+        <section class="section-map container">
+            <h2 class="title-gothic">КАК ДОБРАТЬСЯ?</h2>
+            <div class="map-image">
+                <img src="images/karta.webp" alt="Карта">
             </div>
-          </details>
+        </section>
 
-          <details class="acc">
-            <summary>Дресс-код и внешний вид</summary>
-            <div class="acc__body">
-              Просим приходить в опрятной одежде. Резкие запахи парфюма и шумные
-              аксессуары — нежелательны.
+        <section class="section-culture container">
+            <h2 class="title-gothic">КУЛЬТУРА ПОСЕЩЕНИЯ</h2>
+            <div class="two-columns">
+                <div class="text-block">
+                    <h3>ДОРОГИЕ ЗРИТЕЛИ!</h3>
+                    <p>Наш театр предлагает постановки для взрослой аудитории (18+), где мы исследуем сложные художественные образы и глубокие темы. Чтобы создать идеальную атмосферу, просим соблюдать правила.</p>
+                    <br>
+                    <p class="small">Соблюдение этих правил — знак уважения к труду актеров, комфорту других зрителей и самому себе.</p>
+                    <p class="signature">С УВАЖЕНИЕМ, АДМИНИСТРАЦИЯ ТЕАТРА.</p>
+                </div>
+                <div class="rules-buttons">
+                    <div class="red-btn">Время, пунктуальность и антракт</div>
+                    <div class="red-btn">Дресс-код и внешний вид</div>
+                    <div class="red-btn">Тишина и внимание</div>
+                    <div class="red-btn">Курение на территории театра</div>
+                    <div class="red-btn">Еда и алкоголь в зале театра</div>
+                    <div class="red-btn">Бережное отношение к театру</div>
+                </div>
             </div>
-          </details>
+        </section>
 
-          <details class="acc">
-            <summary>Тишина и внимание</summary>
-            <div class="acc__body">
-              Телефоны — в беззвучный режим, съёмка в зале запрещена. Разговоры
-              и шуршание пакетов мешают.
+        <section class="section-ovz container">
+            <h3 class="subtitle">ДОСТУПНАЯ СРЕДА ДЛЯ ПОСЕТИТЕЛЕЙ С ОВЗ</h3>
+            <div class="two-columns mb-40">
+                <div class="text-block">
+                    <p>Наш театр создает комфортные условия для посетителей с ограниченными возможностями здоровья.</p>
+                    <ul class="simple-list">
+                        <li><b>Для колясочников:</b> 6 трансформируемых мест на первом ряду.</li>
+                        <li><b>Для слабовидящих:</b> специальные места с оптимальным обзором (ряды 5-7).</li>
+                        <li><b>Для слабослышащих:</b> индукционные петли.</li>
+                    </ul>
+                </div>
+                <div class="ovz-image">
+                    <img src="images/ovz.webp" alt="ОВЗ иконка">
+                </div>
             </div>
-          </details>
 
-          <details class="acc">
-            <summary>Курение</summary>
-            <div class="acc__body">Запрещено на всей территории театра.</div>
-          </details>
-
-          <details class="acc">
-            <summary>Еда и алкоголь</summary>
-            <div class="acc__body">
-              В зал нельзя. Буфет работает до спектакля и в антракте.
+            <p class="bold-label">ИНФРАСТРУКТУРА ТЕАТРА ВКЛЮЧАЕТ:</p>
+            <div class="grid-badges">
+                <div class="badge">2 широких входа с пандусами</div>
+                <div class="badge">3 лифта</div>
+                <div class="badge">Тактильная навигация</div>
+                <div class="badge">6 адаптированных туалетов</div>
+                <div class="badge">Адаптированная зона отдыха</div>
             </div>
-          </details>
 
-          <details class="acc">
-            <summary>Бережное отношение к театру</summary>
-            <div class="acc__body">
-              Пожалуйста, соблюдайте чистоту и следуйте указаниям персонала.
+            <p class="bold-label mt-20">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:</p>
+            <div class="grid-badges">
+                <div class="badge">Бесплатные парковки</div>
+                <div class="badge">Сопровождающий персонал</div>
+                <div class="badge">Аудиогиды</div>
+                <div class="badge">Сурдоперевод</div><div class="badge">Тактильные экскурсии</div>
             </div>
-          </details>
-        </div>
-      </div>
-    </section>
 
-    <!-- ACCESSIBILITY -->
-    <section class="a11y" id="a11y">
-      <div class="container">
-        <div class="a11y__head">
-          <h2 class="section-title">
-            Доступная среда для посетителей с&nbsp;ОВЗ
-          </h2>
-          <p>
-            Мы создаём комфортные условия: специальные места, навигация, помощь
-            персонала.
-          </p>
-        </div>
-
-        <div class="a11y__grid">
-          <div class="a11y__text">
-            <ul class="ul">
-              <li>
-                <b>Для колясочников:</b> 6 трансформируемых мест (первый ряд
-                партера).
-              </li>
-              <li>
-                <b>Для слабовидящих:</b> места с оптимальным обзором (ряды 5–7,
-                центр).
-              </li>
-              <li><b>Для слабослышащих:</b> зоны с индукционными петлями.</li>
-            </ul>
-            <div class="a11y__cards">
-              <div class="kpi">
-                <b>2</b><span>входа с пандусами</span><small>уклон ≤ 5°</small>
-              </div>
-              <div class="kpi">
-                <b>3</b><span>лифта</span><small>голос. сопровождение</small>
-              </div>
-              <div class="kpi">
-                <b>6</b><span>адаптированных туалетов</span
-                ><small>на каждом этаже</small>
-              </div>
-              <div class="kpi">
-                <b>∞</b><span>тактильная навигация</span
-                ><small>по всему зданию</small>
-              </div>
-              <div class="kpi">
-                <b>1</b><span>зона отдыха</span><small>с кушетками</small>
-              </div>
+            <div class="ovz-info-box">
+                <h4>КАК ВОСПОЛЬЗОВАТЬСЯ УСЛУГАМИ?</h4>
+                <div class="two-columns">
+                    <div>При бронировании билетов онлайн:</div>
+                    <ol>
+                        <li>Отметьте в форме "Требуется специальное место"</li>
+                        <li>Выберите тип услуги</li>
+                        <li>Получите подтверждение</li>
+                    </ol>
+                </div>
+                <div class="phone-ref">Телефон для справок: +7 (499) 202-08-26</div>
+                <div class="center-text small">МЫ СОЗДАЕМ КОМФОРТНЫЕ УСЛОВИЯ ДЛЯ ВСЕХ ГОСТЕЙ!</div>
             </div>
-          </div>
-          <figure class="a11y__image">
-            <img src="images/visit/a11y.jpg" alt="Доступная среда в театре" />
-          </figure>
-        </div>
+        </section>
 
-        <div class="a11y__more">
-          <h3>Дополнительные услуги</h3>
-          <div class="more__grid">
-            <div class="more">
-              <b>Бесплатные коляски</b><small>по предварительному заказу</small>
+        <section class="section-tickets container">
+            <h2 class="title-gothic">КАК КУПИТЬ БИЛЕТ?</h2>
+            <div class="tickets-grid">
+                <div class="ticket-card">
+                    <img src="images/nout.webp" alt="Онлайн">
+                    <h4>Онлайн-покупка</h4>
+                    <p>На официальном сайте</p>
+                </div>
+                <div class="ticket-card">
+                    <img src="images/dom.webp" alt="Касса">
+                    <h4>Касса театра</h4>
+                    <p>Москва, Театральная, 1</p>
+                </div>
+                <div class="ticket-card">
+                    <img src="images/avtomat.webp" alt="Автоматы">
+                    <h4>Автоматы</h4>
+                    <p>В фойе театра</p>
+                </div>
+                <div class="ticket-card">
+                    <img src="images/tel.webp" alt="Телефон">
+                    <h4>По телефону</h4>
+                    <p>+7 (499) 202-08-26</p>
+                </div>
+                <div class="ticket-card">
+                    <img src="images/lud.webp" alt="Компании">
+                    <h4>Для компаний</h4>
+                    <p>Для групп от 10 человек</p>
+                </div>
             </div>
-            <div class="more">
-              <b>Сопровождающий персонал</b><small>бронь за 24 часа</small>
+        </section>
+
+        <section class="section-benefits container">
+            <h3 class="subtitle">ЛЬГОТНЫЕ УСЛОВИЯ ПОСЕЩЕНИЯ ТЕАТРА</h3>
+            <div class="two-columns benefits-layout">
+                <div class="benefits-list">
+                    <p><b>1. Для студентов:</b></p>
+                    <ul>
+                        <li>Скидка 30% на все спектакли</li>
+                        <li>Студенческая среда — 50%</li>
+                    </ul>
+                    <p><b>2. Для пенсионеров:</b></p>
+                    <ul>
+                        <li>Скидка 40% на дневные</li>
+                        <li>Серебряный четверг — 55%</li>
+                    </ul>
+                    <p><b>3. Именинникам:</b></p>
+                    <ul>
+                        <li>В день рождения — 50%</li>
+                    </ul>
+                </div>
+                <div class="benefits-note">
+                    <p><b>ОБЩИЕ УСЛОВИЯ</b></p>
+                    <ul>
+                        <li>Льготы не суммируются</li>
+                        <li>Требуются документы</li>
+                        <li>Количество мест ограничено</li>
+                    </ul>
+                    <p class="mt-20"><b>ЗАБРОНИРОВАТЬ:</b></p>
+                    <ul>
+                        <li>В кассе театра</li>
+                        <li>По телефону</li>
+                    </ul>
+                </div>
             </div>
-            <div class="more">
-              <b>Аудиогиды с тифлокомментариями</b><small>по запросу</small>
+        </section>
+
+      <section class="section-tour container">
+    <h2 class="title-gothic">ЭКСКУРСИЯ ПО ТЕАТРУ</h2>
+    
+    <div class="tour-layout">
+        <div class="tour-row tour-row-1">
+            <div class="tour-text">
+                <h3 class="subtitle">ТЕАТР ТЕНЕЙ И ТАЙН: ЗАКУЛИСЬЕ, ОТ КОТОРОГО ПО КОЖЕ БЕГУТ МУРАШКИ</h3>
+                <p class="bold-text">ГОТОВЫ ЛИ ВЫ СДЕЛАТЬ ШАГ ТУДА, ГДЕ ГРАНИЦА МЕЖДУ СЦЕНОЙ И РЕАЛЬНОСТЬЮ СТИРАЕТСЯ?</p>
+                <p>Приглашаем вас на экскурсию по нашему театру — мрачному и завораживающему пространству.</p>
             </div>
-            <div class="more">
-              <b>Сурдоперевод</b><small>для 3–4 премьер в сезон</small>
+            <div class="tour-img-stack">
+                <img src="images/zal2.webp" alt="Задний план" class="img-layer-1">
+                <img src="images/derev.webp" alt="Передний план" class="img-layer-2">
             </div>
-            <div class="more">
-              <b>Тактильные экскурсии</b><small>по запросу на кассах</small>
+        </div>
+
+        <div class="tour-row tour-row-2">
+            <div class="tour-img">
+                <img src="images/zal2.webp" alt="Зал">
             </div>
-          </div>
+            <div class="tour-text">
+                <h4 class="bold-text">ВО ВРЕМЯ ЭКСКУРСИИ ВЫ:</h4>
+                <ul class="tour-list">
+                    <li>Пройдете по коридорам, где слышны шаги героев</li>
+                    <li>Заглянете в гримерки к ведьмам и духам</li>
+                    <li>Увидите антикварный реквизит и гробы</li>
+                </ul>
+                <div class="tour-params">
+                    <div class="param-item">
+                        <span class="p-top">60 минут</span>
+                        <span class="p-bot">Продолжительность</span>
+                    </div>
+                    <div class="param-item">
+                        <span class="p-top">Групповые экскурсии</span>
+                        <span class="p-bot">Формат</span>
+                    </div>
+                    <div class="param-circle">
+                        <span class="p-top">18+</span>
+                        <span class="p-bot">СТРОГО 18+</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="a11y__how">
-          <h3>Как воспользоваться услугами?</h3>
-          <ol>
-            <li>При онлайн-покупке отметьте «Требуется специальное место».</li>
-            <li>Выберите тип услуги (коляска, тифлокомментарий и др.).</li>
-            <li>Получите подтверждение на e-mail.</li>
-          </ol>
-          <p class="tel">
-            <b>Телефон для справок:</b> +7 (499) 202-08-26 (доб. 5)
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TICKETS -->
-    <section class="tickets" id="tickets">
-      <div class="container">
-        <h2 class="section-title center">Как купить билет?</h2>
-        <div class="cards">
-          <article class="card">
-            <img src="images/visit/tickets-online.jpg" alt="" />
-            <h3>Онлайн-покупка</h3>
-            <ul>
-              <li>На сайте театра (24/7)</li>
-              <li>В мобильном приложении (iOS/Android)</li>
-              <li>На партнёрских площадках (Яндекс.Афиша, Kassir и др.)</li>
-            </ul>
-          </article>
-          <article class="card">
-            <img src="images/visit/tickets-office.jpg" alt="" />
-            <h3>Касса театра</h3>
-            <ul>
-              <li>Адрес: Москва, Театральная, 1</li>
-              <li>Часы работы: 10:00–20:00</li>
-            </ul>
-          </article>
-          <article class="card">
-            <img src="images/visit/tickets-kiosk.jpg" alt="" />
-            <h3>Автоматы</h3>
-            <ul>
-              <li>В фойе театра, ежедневно 10:00–20:00</li>
-            </ul>
-          </article>
-          <article class="card">
-            <img src="images/visit/tickets-phone.jpg" alt="" />
-            <h3>По телефону</h3>
-            <ul>
-              <li>+7 (499) 202-08-26</li>
-              <li>10:00–20:00</li>
-            </ul>
-          </article>
-          <article class="card">
-            <img src="images/visit/tickets-corp.jpg" alt="" />
-            <h3>Для компаний</h3>
-            <ul>
-              <li>Группы от 10 человек — скидка 15%</li>
-              <li>Оформление по договору</li>
-              <li>corp@teatr.ru • +7 (499) 202-08-26</li>
-            </ul>
-          </article>
+        <div class="tour-blue-banner">
+            ПОГРУЗИТЕСЬ В АТМОСФЕРУ ТЕАТРА, ГДЕ СТРАХ — ЭТО ИСКУССТВО.
         </div>
 
-        <div class="benefits">
-          <div class="benefits__text">
-            <h3>Льготные условия</h3>
-
-            <h4>Студенты</h4>
-            <ul>
-              <li><b>−30%</b> на все спектакли по студбилету</li>
-              <li><b>Студенческая среда</b>: последний четверг месяца −50%</li>
-              <li>
-                10 бесплатных мест на гала-спектакли (регистрация за 3 дня)
-              </li>
-            </ul>
-
-            <h4>Пенсионеры</h4>
-            <ul>
-              <li><b>−40%</b> на дневные спектакли (до 17:00)</li>
-              <li><b>Серебряный четверг</b>: −55% на утренние спектакли</li>
-              <li>Чай/кофе в буфете — бесплатно</li>
-            </ul>
-
-            <h4>Именинники</h4>
-            <ul>
-              <li>В день рождения и +3 дня — <b>−50%</b> на билет</li>
-              <li>Подарок: бокал шампанского/десерт</li>
-              <li>+1 сопровождающий бесплатно (по паспорту)</li>
-            </ul>
-          </div>
-
-          <aside class="benefits__note">
-            <h4>Общие условия</h4>
-            <ul>
-              <li>Льготы не суммируются</li>
-              <li>Нужны подтверждающие документы</li>
-              <li>Количество льготных мест ограничено</li>
-              <li>Возврат — не позднее чем за 3 дня до спектакля</li>
-            </ul>
-            <p>
-              Бронь льготных билетов: в кассе, по телефону или через форму на
-              сайте.
-            </p>
-          </aside>
+        <div class="tour-row tour-row-3">
+            <div class="tour-img">
+                <img src="images/4.webp" alt="Финал">
+            </div>
+            <div class="tour-text">
+                <h4 class="subtitle">ЕСЛИ НЕ БОИТЕСЬ ТЕМНОТЫ И ШЁПОТА ЗА СПИНОЙ — ДОБРО ПОЖАЛОВАТЬ!</h4>
+                <p class="bold-text">НЕ ЗАБУДЬТЕ ЗАХВАТИТЬ С СОБОЙ ХРАБРОСТЬ!</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- TOUR -->
-    <section class="tour" id="tour">
-      <div class="container">
-        <h2 class="section-title center">Экскурсия по театру</h2>
-
-        <div class="tour__lead">
-          <div class="tour__text">
-            <h3>Театр теней и тайн</h3>
-            <p>
-              <b
-                >Готовы сделать шаг туда, где граница между сценой и реальностью
-                стирается?</b
-              >
-              Приглашаем на экскурсию — в сердце мистики, страха и искусства.
-            </p>
-            <ul class="dash">
-              <li>Коридоры, где до сих пор слышны шаги героев</li>
-              <li>Гримёрки, перевоплощения, реквизит</li>
-              <li>Реальные истории необъяснимых явлений</li>
-            </ul>
-          </div>
-          <figure class="tour__img">
-            <img src="images/visit/tour-hero.jpg" alt="Закулисье театра" />
-          </figure>
+   <footer class="main-footer">
+    <div class="container footer-inner">
+        <div class="footer-logo">
+            <img src="images/Logo.webp" alt="ЗлоТеатр">
         </div>
-
-        <div class="tour__facts">
-          <div class="fact"><b>60 минут</b><span>Продолжительность</span></div>
-          <div class="fact"><b>Группы</b><span>Формат посещения</span></div>
-          <div class="fact fact-18">
-            <b>СТРОГО 18+</b
-            ><span>Часть экспонатов может быть некомфортна</span>
-          </div>
+        <div class="footer-columns">
+            <div class="f-col">
+                <h6>ГЛАВНАЯ</h6>
+                <a href="about.html">Кто мы</a>
+                <a href="afisha.html">Акции</a>
+            </div>
+            <div class="f-col">
+                <h6>АФИША И БИЛЕТЫ</h6>
+                <a href="afisha.html">Афиша</a>
+                <a href="contacts.html">Касса</a>
+            </div>
+            <div class="f-col">
+                <h6>РЕПЕРТУАР</h6>
+                <a href="repertuar.html">Медиа</a>
+                <a href="projects.html">Проекты</a>
+            </div>
+            <div class="f-col">
+                <h6>О ТЕАТРЕ</h6>
+                <a href="history.html">История</a>
+                <a href="about.html">Люди театра</a>
+            </div>
+            <div class="f-col">
+                <h6>ВИЗИТ В ТЕАТР</h6>
+                <a href="visit.html">Как добраться</a>
+                <a href="visit.html">Правила</a>
+            </div>
+            <div class="f-col">
+                <h6>ПРОЕКТЫ</h6>
+                <a href="projects.html">Анонсы</a>
+                <a href="projects.html">Архив</a>
+            </div>
+            <div class="f-col">
+                <h6>КОНТАКТЫ</h6>
+                <a href="contacts.html">Контакты</a>
+                <a href="contacts.html">Реквизиты</a>
+            </div>
+            <div class="f-col">
+                <h6>БУФЕТ / ЛАВКА</h6>
+                <a href="buffet.html">Меню</a>
+                <a href="souvenir.html">Магазин</a>
+            </div>
         </div>
-
-        <p class="center tour__cta">
-          Записаться можно онлайн, по телефону или в кассе театра.
-        </p>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__col">
-          <h4>Визит в театр</h4>
-          <ul>
-            <li><a href="#rules">Правила посещения</a></li>
-            <li><a href="#a11y">Зрителям с ОВЗ</a></li>
-            <li><a href="#tickets">Как купить билет</a></li>
-            <li><a href="#tour">Экскурсия по театру</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Контакты</h4>
-          <ul>
-            <li><a href="contacts.html">Контакты театра</a></li>
-            <li><a href="buffet.html">Буфет</a></li>
-            <li><a href="souvenir.html">Сувенирная лавка</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
-    </footer>
-
-    <script src="javascripts/visit.js"></script>
-  </body>
+    </div>
+</footer>
+</body>
 </html>

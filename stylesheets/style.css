@@ -1,4 +1,181 @@
-@import 'reset.css';
-@import 'fonts.css';
-@import 'layout.css';
-@import 'afisha.css';
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #000; color: #fff; font-family: "Arial", sans-serif; }
+
+.page-wrapper { border: 4px solid #ba0000; min-height: 100vh; }
+.inner-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* HEADER */
+.main-header { padding: 20px 0; }
+.header-row { display: flex; justify-content: space-between; align-items: center; }
+.logo-box img { height: 60px; display: block; }
+.main-nav { display: flex; gap: 15px; }
+.main-nav a { color: #fff; text-decoration: none; font-size: 11px; font-weight: bold; }
+
+/* BANNER */
+.main-banner img { width: 100%; display: block; border-top: 2px solid #ba0000; border-bottom: 2px solid #ba0000; }
+.section-title { text-align: center; font-size: 32px; margin: 40px 0; letter-spacing: 4px; }
+
+/* HITS */
+.hits-row { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px; }
+.hits-row::-webkit-scrollbar { display: none; }
+.hit-card { width: 220px; height: 320px; flex-shrink: 0; position: relative; }
+.hit-card img { width: 100%; height: 100%; object-fit: cover; border-radius: 5px; }
+.hit-card p { position: absolute; bottom: 15px; width: 100%; text-align: center; font-size: 14px; background: rgba(0,0,0,0.5); }
+
+.btn-box { text-align: center; margin: 30px 0; }
+.red-btn { background: #ba0000; color: #fff; padding: 12px 50px; border-radius: 25px; text-decoration: none; font-weight: bold; }
+
+/* PROMO (FIXED) */
+.promo-flex { display: flex; gap: 20px; height: 500px; margin-bottom: 60px; }
+.promo-left { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.promo-right { flex: 1.5; }
+
+.promo-img-small { height: calc(50% - 10px); background: #111; border-radius: 10px; overflow: hidden; }
+.promo-img-big { height: 100%; background: #111; border-radius: 10px; overflow: hidden; }
+.promo-flex img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ФУТЕР — СЕТКА 10 КОЛОНОК */
+.main-footer {
+    padding: 60px 0 40px;
+    border-top: 1px solid #333;
+    background-color: #000;
+}
+
+.footer-grid {
+    display: grid;
+    /* 1 колонка под лого (чуть шире) + 9 колонок под текст */
+    grid-template-columns: 1.2fr repeat(9, 1fr); 
+    gap: 15px;
+    align-items: start;
+}
+
+.f-logo img {
+    width: 80px; /* Размер как в Figma */
+    display: block;
+}
+
+.f-col h4 {
+    font-size: 10px; /* Маленький капс как на макете */
+    color: #fff;
+    margin-bottom: 12px;
+    white-space: nowrap; /* Чтобы заголовки не переносились */
+    font-weight: bold;
+}
+
+.f-col a {
+    display: block;
+    color: #888;
+    text-decoration: none;
+    font-size: 9px;
+    line-height: 1.6;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+
+.f-col a:hover {
+    color: #ba0000;
+}
+
+/* Фикс для шапки, чтобы была ровно как на фото 1 */
+.main-header {
+    padding: 20px 0;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* === UI micro-animations (shared) === */
+
+/* Аккуратные микровзаимодействия: работают на всех страницах без JS-зависимостей */
+a, button, input, textarea, select {
+  transition: transform 120ms ease, opacity 150ms ease, filter 150ms ease, background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+a:hover { opacity: .9; }
+a:active { transform: translateY(1px); }
+
+button:hover { filter: brightness(1.05); }
+button:active { transform: translateY(1px) scale(0.98); }
+
+/* Плавный уход страницы при навигации */
+body { transition: opacity 200ms ease; }
+body.is-leaving { opacity: 0; }
+
+/* Reveal при скролле (JS добавляет .reveal и .is-visible) */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 600ms ease, transform 600ms ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* 404 PAGE */
+.page-404 main{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+.page-404 .div{
+  width: 100%;
+  max-width: 560px;
+}
+.page-404 .div2{
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 1.4;
+  opacity: .95;
+}
+.page-404 .component-1{
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 2px solid #ba0000;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+.page-404 .component-1:hover{
+  background: rgba(186,0,0,.12);
+}
+.page-404 .div3{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #ba0000;
+  flex: 0 0 auto;
+}
+.page-404 .b{
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.page-404 .div4{
+  margin-top: 18px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: .7;
+}

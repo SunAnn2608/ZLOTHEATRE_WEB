@@ -1,333 +1,341 @@
-.theme-light {
-  background: #fbf5f5;
-  color: #000;
-}
-
-/* HERO */
-.page-hero {
-  padding: 48px 0 24px;
-}
-.hero__wrap {
-  max-width: 1120px;
-  margin: 0 auto;
-  text-align: center;
-}
-.page-hero h1 {
-  font: 700 64px/1.05 'GHEA Mariam', 'Lunasima', sans-serif;
-  margin: 0 0 10px;
-}
-.hero__image img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 24px;
-}
-.sub {
-  margin: 10px 0 0;
-  font: 500 16px/1.4 'Inter', sans-serif;
-  color: #333;
-}
-
-/* GENERIC */
-.section-title {
-  font: 700 48px/1.1 'GHEA Mariam', 'Lunasima', sans-serif;
-  letter-spacing: 0.4px;
-  margin: 0 0 14px;
-}
-.center {
-  text-align: center;
+/* Общие настройки */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Поставь свой шрифт */
+    background-color: #fcf6f6; /* Светло-розовый фон как на макете */
+    color: #000;
 }
 .container {
-  width: min(1200px, 92%);
-  margin-inline: auto;
+    max-width: 1100px; /* Ширина контента */
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
-/* RULES */
-.rules {
-  padding: 56px 0 24px;
-}
-.rules__intro {
-  max-width: 860px;
-  margin: 0 auto 18px;
-  text-align: center;
-  font: 400 16px/1.6 'Inter', sans-serif;
-}
-.rules .muted {
-  color: #666;
-}
-
-.accordion .acc {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-  margin: 10px 0;
-}
-.accordion summary {
-  list-style: none;
-  cursor: pointer;
-  padding: 16px 18px;
-  font: 600 18px/1.3 'Inter', sans-serif;
-}
-.accordion summary::-webkit-details-marker {
-  display: none;
-}
-.accordion .acc__body {
-  padding: 0 18px 18px;
-  font: 400 16px/1.55 'Inter', sans-serif;
-  color: #222;
-}
-
-/* A11Y */
-.a11y {
-  padding: 40px 0;
-}
-.a11y__head p {
-  margin: 0 0 18px;
-  font: 400 16px/1.55 'Inter', sans-serif;
-}
-.a11y__grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.9fr;
-  gap: 24px;
-  align-items: center;
-}
-.a11y__image img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 24px;
-}
-
-.a11y__cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-  margin: 16px 0 0;
-}
-.kpi {
-  background: linear-gradient(90deg, #b80404, #5f0008);
-  color: #fff;
-  border-radius: 16px;
-  padding: 16px;
-  text-align: left;
-}
-.kpi b {
-  display: block;
-  font: 700 32px/1 'Angst', 'Inter', sans-serif;
-}
-.kpi span {
-  display: block;
-  font: 600 16px/1.25 'Inter', sans-serif;
-}
-.kpi small {
-  display: block;
-  opacity: 0.9;
-  font: 400 12px/1.2 'Inter', sans-serif;
-  margin-top: 6px;
-}
-
-.a11y__more {
-  margin-top: 26px;
-}
-.more__grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-}
-.more {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-  padding: 16px;
-}
-.more b {
-  display: block;
-  font: 700 18px/1.2 'Inter', sans-serif;
-}
-.more small {
-  color: #555;
-}
-
-.a11y__how {
-  margin-top: 24px;
-  font: 400 16px/1.6 'Inter', sans-serif;
-}
-.a11y__how ol {
-  padding-left: 20px;
-}
-.a11y__how .tel {
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-/* TICKETS */
-.tickets {
-  padding: 56px 0;
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
-  margin-top: 18px;
-}
-.card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-  padding-bottom: 12px;
-}
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 16px 16px 0 0;
-}
-.card h3 {
-  margin: 10px 12px 6px;
-  font: 700 20px/1.2 'Inter', sans-serif;
-}
-.card ul {
-  margin: 0 12px 10px;
-  padding-left: 18px;
-  font: 400 14px/1.5 'Inter', sans-serif;
-}
-
-.benefits {
-  display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 24px;
-  margin-top: 28px;
-}
-.benefits__text h3 {
-  margin: 0 0 10px;
-}
-.benefits__text h4 {
-  margin: 14px 0 6px;
-  font: 700 18px/1.2 'Inter', sans-serif;
-}
-.benefits__text ul {
-  padding-left: 18px;
-  margin: 0 0 8px;
-  font: 400 14.5px/1.55 'Inter', sans-serif;
-}
-
-.benefits__note {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-  padding: 16px;
-}
-.benefits__note h4 {
-  margin: 0 0 8px;
-  font: 700 18px/1.2 'Inter', sans-serif;
-}
-.benefits__note ul {
-  padding-left: 18px;
-  margin: 0 0 10px;
-  font: 400 14.5px/1.55 'Inter', sans-serif;
-}
-
-/* TOUR */
-.tour {
-  padding: 56px 0 80px;
-}
-.tour__lead {
-  display: grid;
-  grid-template-columns: 1.2fr 0.9fr;
-  gap: 24px;
-  align-items: center;
-}
-.tour__img img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 24px;
-}
-.tour__text h3 {
-  margin: 0 0 8px;
-  font: 700 28px/1.2 'Inter', sans-serif;
-}
-.tour__text p,
-.tour__text ul {
-  font: 400 16px/1.6 'Inter', sans-serif;
-}
-.tour__text .dash {
-  padding-left: 18px;
-  list-style: '—  ';
-}
-
-.tour__facts {
-  margin: 22px auto 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  max-width: 980px;
-}
-.fact {
-  background: linear-gradient(90deg, #b80404, #5f0008);
-  color: #fff;
-  border-radius: 16px;
-  padding: 16px;
-  text-align: center;
-}
-.fact b {
-  display: block;
-  font: 700 26px/1.1 'Angst', 'Inter', sans-serif;
-}
-.fact span {
-  display: block;
-  font: 500 14px/1.3 'Inter', sans-serif;
-  opacity: 0.95;
-}
-.fact-18 b {
-  font-size: 22px;
-}
-
-.tour__cta {
-  margin-top: 16px;
-  font: 600 18px/1.4 'Inter', sans-serif;
-}
-
-/* Footer tweaks (reuse global footer) */
-.footer {
-  margin-top: 40px;
-}
-
-/* Responsive */
-@media (max-width: 1200px) {
-  .a11y__grid,
-  .tour__lead,
-  .benefits {
-    grid-template-columns: 1fr;
-  }
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .a11y__cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .more__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 760px) {
-  .page-hero h1 {
-    font-size: 44px;
-  }
-  .section-title {
+img { max-width: 100%; display: block; }
+.title-gothic {
+    font-family: 'Times New Roman', serif; /* Или твой готический шрифт */
+    font-weight: bold;
     font-size: 36px;
-  }
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-  .a11y__cards,
-  .more__grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .tour__facts {
-    grid-template-columns: 1fr;
-  }
-  .nav {
-    display: none;
-  }
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
 }
+.subtitle {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.section-ovz, .section-benefits, .section-tour, .section-tickets {
+    margin-bottom: 60px;
+}
+
+/* --- СТИЛИ ШАПКИ --- */
+.main-header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eaeaea; /* Легкая линия снизу */
+}
+
+/* Контейнер, чтобы всё не прилипало к краям */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Выравниваем лого и меню в одну строку */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Размер логотипа в шапке */
+.logo-box img {
+    height: 50px; /* Можешь поменять высоту, ширина подстроится */
+    display: block;
+}
+
+/* Ссылки меню */
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px; /* Размер шрифта ссылок */
+    font-weight: 700; /* Жирность */
+    margin-left: 20px; /* Отступ между ссылками */
+    text-transform: uppercase; /* Все буквы заглавные */
+    font-family: sans-serif;
+}
+
+/* Цвет активной ссылки (на которой сейчас находишься) */
+.main-nav a.active {
+    color: #900; /* Темно-красный */
+}
+
+/* === КАРТА === */
+.map-image img {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+/* === КУЛЬТУРА ПОСЕЩЕНИЯ === */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.rules-buttons .red-btn {
+    background-color: #5c0000; /* Темно-красный */
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px; /* Закругленные кнопки */
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.rules-buttons .red-btn:hover { background-color: #800000; }
+.small { font-size: 12px; color: #555; }
+.signature { font-weight: bold; margin-top: 20px; }
+
+/* === ДОСТУПНАЯ СРЕДА (OVZ) === */
+.mb-40 { margin-bottom: 40px; }
+.grid-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.badge {
+    background-color: #800000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+    flex: 1 1 18%; /* Растягиваются */
+}
+.bold-label { font-weight: bold; margin-bottom: 10px; }
+.mt-20 { margin-top: 20px; }
+.ovz-info-box {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.phone-ref { font-weight: bold; margin-top: 20px; }
+.center-text { text-align: center; display: block; width: 100%; margin-top: 10px; }
+
+/* === БИЛЕТЫ (5 КАРТОЧЕК) === */
+.tickets-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.ticket-card {
+    text-align: center;
+}
+.ticket-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.ticket-card h4 { font-size: 14px; margin: 5px 0; }
+.ticket-card p { font-size: 11px; color: #666; }
+
+/* === ЛЬГОТЫ === */
+.benefits-layout {
+    align-items: start;
+}
+.benefits-note {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+}
+.benefits-list ul, .benefits-note ul {
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* === ЭКСКУРСИЯ (TOUR) ПОЛНОСТЬЮ ИСПРАВЛЕННЫЙ === */
+.tour-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 40px 0;
+}
+
+.tour-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.tour-text, .tour-img, .tour-img-stack {
+    flex: 1;
+    width: 50%;
+}
+
+/* УПРАВЛЕНИЕ ПОРЯДКОМ (чтобы не юзать rtl) */
+.tour-row-1 .tour-text { order: 1; }
+.tour-row-1 .tour-img-stack { order: 2; }
+
+.tour-row-2 .tour-img { order: 1; }
+.tour-row-2 .tour-text { order: 2; }
+
+.tour-row-3 .tour-img { order: 1; }
+.tour-row-3 .tour-text { order: 2; }
+
+/* Наложение картинок (Блок 1) */
+.tour-img-stack {
+    display: grid;
+    position: relative;
+    height: 350px;
+}
+
+.tour-img-stack img {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.img-layer-1 {
+    justify-self: end;
+    filter: brightness(0.3);
+    z-index: 1;
+}
+
+.img-layer-2 {
+    align-self: end;
+    z-index: 2;
+}
+
+/* Обычные картинки (Блоки 2 и 3) */
+.tour-img img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Плашки и рамки */
+.tour-blue-banner {
+    border: 2px dashed #36a9e1;
+    padding: 30px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.tour-params {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.param-item {
+    background: #900;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.param-circle {
+    background: #fff;
+    border: 2px solid #900;
+    color: #900;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.p-top { font-weight: bold; font-size: 14px; }
+.p-bot { font-size: 8px; text-transform: uppercase; }
+
+/* Адаптив для мобил */
+@media (max-width: 768px) {
+    .tour-row, .tour-row.reverse {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tour-params {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* --- СТИЛИ ПОДВАЛА --- */
+.main-footer {
+    background-color: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #eaeaea;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по верху */
+    gap: 30px;
+}
+
+/* Логотип в подвале */
+.footer-logo img {
+    height: 40px; /* Он чуть меньше, чем в шапке */
+}
+
+/* Сетка из 8 колонок */
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Ровно 8 равных колонок */
+    width: 100%;
+    gap: 10px;
+}
+
+/* Заголовки колонок (ГЛАВНАЯ, АФИША...) */
+.f-col h6 {
+    font-size: 9px;
+    color: #999; /* Серый цвет */
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Ссылки в подвале */
+.f-col a {
+    display: block; /* Каждая ссылка с новой строки */
+    font-size: 9px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.f-col a:hover {
+    color: #900; /* Красный при наведении */
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 768px) {
+    .two-columns, .tour-row, .tickets-grid, .footer-links {
+        grid-template-columns: 1fr; /* Все в одну колонку */
+    }
+    .badge { flex: 1 1 45%; }
+    .header-row { flex-direction: column; }
+    .nav-menu { margin-top: 10px; display: flex; flex-wrap: wrap; justify-content: center; }
+}
+

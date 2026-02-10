@@ -1,118 +1,262 @@
-.theme-light {
-  background: #fff;
-  color: #000;
-}
-.page-hero {
-  background: #fbf5f5;
-  padding: 60px 0 30px;
-  text-align: center;
-}
-.page-hero .section-title {
-  font: 700 72px/1.1 'GHEA Mariam', 'Lunasima', sans-serif;
-  margin-bottom: 10px;
-}
-.page-hero .lead {
-  font: 400 20px/1.4 'Inter', sans-serif;
-  color: #444;
+/* --- Сброс стилей и общие настройки --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.contacts-section {
-  padding: 64px 0;
-  border-bottom: 1px solid #eee;
-}
-.contacts-section.alt {
-  background: #fbf5f5;
-}
-.contacts-section h2 {
-  font: 700 40px/1.2 'Lunasima', 'Inter', sans-serif;
-  margin-bottom: 18px;
-  color: #5f0008;
-}
-.contacts-section h3 {
-  font: 600 26px/1.2 'Lunasima', 'Inter', sans-serif;
-  margin-top: 32px;
-  margin-bottom: 6px;
-}
-.contacts-section p {
-  font: 400 18px/1.6 'Inter', sans-serif;
-  margin: 4px 0;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+    /* Красная рамка по периметру, как на скриншоте */
+    border: 15px solid #b30000; 
+    min-height: 100vh;
 }
 
-.contacts-form {
-  background: #f3eded;
-  padding: 80px 0;
-  text-align: center;
-}
-.contacts-form h2 {
-  font: 700 48px/1.2 'Lunasima', 'Inter', sans-serif;
-  color: #5f0008;
-  margin-bottom: 16px;
-}
-.contacts-form .hint {
-  max-width: 600px;
-  margin: 0 auto 32px;
-  font: 400 16px/1.4 'Inter', sans-serif;
-  color: #444;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.contacts-form form {
-  max-width: 960px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
-}
-input,
-textarea {
-  width: 100%;
-  padding: 14px 18px;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  font: 400 16px 'Inter', sans-serif;
-  resize: none;
-}
-textarea {
-  min-height: 140px;
-}
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: #5f0008;
-}
-.btn {
-  align-self: center;
-  background: linear-gradient(90deg, #b80404, #5f0008);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 14px 32px;
-  font: 600 16px/1 'Inter', sans-serif;
-  cursor: pointer;
-}
-.btn:hover {
-  opacity: 0.9;
+h1, h2, h3 {
+    font-family: 'Times New Roman', serif; /* Серифный шрифт для заголовков */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-/* footer */
-.footer__col .socials img {
-  width: 32px;
-  height: 32px;
-  margin-right: 8px;
+h2 { font-size: 2rem; margin-top: 40px; }
+h3 { font-size: 1.2rem; margin-top: 20px; text-align: left; }
+
+p { line-height: 1.5; margin-bottom: 10px; font-size: 0.95rem; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* --- Хедер --- */
+header {
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
 }
 
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #b30000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+}
+.logo img { height: 50px; margin-bottom: 5px; } /* Место под логотип-череп */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover { color: #b30000; }
+
+/* --- Раздел: Добро пожаловать --- */
+.welcome-section {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 30px;
+}
+.welcome-text { flex: 1; }
+.welcome-text h2 { text-align: left; font-size: 1.8rem; margin-top: 0; }
+.welcome-banner { 
+    flex: 1.5; 
+    background: #000; 
+    height: 150px; 
+    overflow: hidden;
+}
+/* Вставьте изображение в этот блок */
+.welcome-banner img { width: 100%; height: 100%; object-fit: cover; }
+
+/* --- Раздел: КАССА --- */
+.kassa-section {
+    margin-top: 50px;
+}
+.kassa-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.kassa-img {
+    flex: 1;
+    height: 150px;
+    background: #b30000; /* Цвет заглушки */
+}
+.kassa-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.kassa-info { flex: 1; }
+.kassa-info p { margin-bottom: 5px; font-weight: 500; }
+
+/* --- Формы (Общие стили) --- */
+.form-section { margin-top: 50px; }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #dcdcdc; /* Серый фон полей */
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+
+textarea { resize: vertical; min-height: 120px; }
+
+.btn-submit {
+    background-color: #b30000;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-submit:hover { background-color: #8a0000; }
+
+/* Специфика формы билетов */
+.seat-map {
+    background-color: #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seat-map-graphic {
+    width: 80%;
+    height: 100px;
+    border: 2px dashed #666;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.date-time-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- Контакты компании и Поддержка --- */
+.contacts-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+.contacts-text { flex: 1; }
+.contacts-img { flex: 1; height: 300px; background: #333; }
+.contacts-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.bold-label { font-weight: bold; margin-top: 15px; display: block; }/* --- Соц сети --- */
+.socials-section { margin-top: 40px; }
+.socials-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-card {
+    width: 18%;
+    aspect-ratio: 1 / 1;
+    background: #b30000; /* Красный фон */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.social-card img { width: 100%; height: 100%; object-fit: cover; }
+
+/* --- Форма обратной связи --- */
+.feedback-form .full-width {
+    grid-column: 1 / -1;
+}
+.disclaimer {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* --- Реквизиты --- */
+.requisites-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+}
+.requisites-text { flex: 1; font-size: 0.9rem; }
+.requisites-img { flex: 1; height: 200px; background: #333; }
+.requisites-img img { width: 100%; height: 100%; object-fit: cover; }
+
+/* --- Футер --- */
+footer {
+    margin-top: 50px;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    font-size: 0.75rem;
+}
+.footer-col h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 5px; }
+.footer-col a { text-decoration: none; color: #333; }
+
+/* Адаптив для мобильных */
 @media (max-width: 768px) {
-  .page-hero .section-title {
-    font-size: 52px;
-  }
-  .contacts-section h2 {
-    font-size: 32px;
-  }
-  .contacts-form h2 {
-    font-size: 36px;
-  }
+    .form-grid, .contacts-wrapper, .kassa-content, .welcome-section, .requisites-wrapper, .footer-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    .nav-menu { display: none; }
+    .header-inner { justify-content: center; }
 }

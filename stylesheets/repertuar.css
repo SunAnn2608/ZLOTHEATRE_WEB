@@ -1,228 +1,218 @@
-/* Светлая тема для страницы */
-.theme-light {
-  background: #fbf5f5;
-  color: #000;
+:root {
+    --bg-color: #fcf9f7;
+    --accent-red: #ba0000;
+    --text-color: #1a1a1a;
 }
 
-/* Общие */
-.section-title {
-  font: 700 48px/1.1 'GHEA Mariam', 'Lunasima', sans-serif;
-  letter-spacing: 0.4px;
-  margin: 0 0 18px;
-}
-.section-subtitle {
-  font: 400 16px/1.5 'Inter', sans-serif;
-  color: #3b3b3b;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--accent-red);
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    color: var(--text-color);
 }
 
-/* HERO */
-.page-hero {
-  padding: 56px 0 24px;
-}
-.hero__grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.9fr;
-  gap: 28px;
-  align-items: center;
-}
-.hero__text h1 {
-  font: 700 72px/1 'GHEA Mariam', 'Lunasima', sans-serif;
-  margin: 0 0 8px;
-}
-.lead {
-  font: 600 20px/1.2 'Inter', sans-serif;
-  color: #5f0008;
-  margin: 0 0 16px;
-}
-.columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.columns p {
-  margin: 0;
-  font: 400 16px/1.5 'Inter', sans-serif;
-}
-.punch {
-  margin: 18px 0 0;
-  padding-left: 16px;
-  border-left: 4px solid #5f0008;
-  font: 600 18px/1.4 'Inter', sans-serif;
-}
-.hero__image img {
-  width: 100%;
-  border-radius: 24px;
-  display: block;
-  object-fit: cover;
+.page-wrapper {
+    border: 20px solid var(--accent-red);
+    min-height: 100vh;
+    background-color: var(--bg-color); /* Фон для всей страницы внутри рамки */
 }
 
-/* MEDIA STRIP */
-.media-strip {
-  padding: 40px 0 0;
-}
-.media-strip__row {
-  margin-top: 18px;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  gap: 20px;
-}
-.media-strip__row img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 24px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    padding: 20px 40px;
 }
 
-/* PERSONS */
-.persons {
-  padding: 56px 0;
+/* HEADER */
+.main-header { 
+    background-color: var(--bg-color);
+    padding: 20px 0; 
+    border-bottom: 1px solid #ddd;
 }
-.cards {
-  display: grid;
-  gap: 20px;
-}
-.cards--persons {
-  grid-template-columns: repeat(5, 1fr);
-}
-.p-card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding-bottom: 12px;
-}
-.p-card__img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  display: block;
-}
-.p-card__name {
-  margin: 10px 12px 2px;
-  font: 700 18px/1.2 'Inter', sans-serif;
-}
-.p-card__role {
-  margin: 0 12px 10px;
-  color: #666;
-  font: 400 14px/1.3 'Inter', sans-serif;
+.header-row { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.logo-box img { height: 60px; display: block; }
+.main-nav { display: flex; gap: 15px; }
+.main-nav a { color: #000; text-decoration: none; font-size: 11px; font-weight: bold; }
+.main-nav a.active { color: var(--accent-red); text-decoration: underline; }
+
+/* --- ОБНОВЛЕННАЯ СЕТКА РЕПЕРТУАРА --- */
+.repertoire-grid {
+    display: flex; /* Используем Flex для двух колонок */
+    gap: 40px; /* Расстояние между левой и правой колонкой */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--bg-color);
+    align-items: flex-start;
 }
 
-/* MEMORY */
-.memory {
-  padding: 40px 0;
-}
-.cards--memory {
-  grid-template-columns: repeat(5, 1fr);
-}
-.cards--memory img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 16px;
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Вертикальное расстояние между элементами внутри колонки */
 }
 
-/* ORCHESTRA */
-.orchestra {
-  padding: 56px 0;
-}
-.orchestra__grid {
-  display: grid;
-  grid-template-columns: 620px 1fr;
-  gap: 28px;
-  align-items: start;
-}
-.orchestra__cover img {
-  width: 100%;
-  height: 620px;
-  object-fit: cover;
-  border-radius: 24px;
-}
-.orchestra__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.mini-card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
-}
-.mini-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  display: block;
-}
-.mini-card h4 {
-  margin: 10px 12px 12px;
-  font: 600 16px/1.3 'Inter', sans-serif;
+.grid-item { padding: 0; }
+
+/* Заголовок как на макете */
+.gothic-title {
+    font-family: 'Old English Text MT', 'Georgia', serif;
+    font-size: 110px; /* Увеличенный размер */
+    line-height: 0.8;
+    margin: 0 0 20px 0;
+    color: #000;
 }
 
-/* CREW */
-.crew {
-  padding: 56px 0 80px;
-}
-.cards--crew {
-  grid-template-columns: repeat(3, 1fr);
-}
-.crew-card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-.crew-card img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  display: block;
-}
-.crew-card h4 {
-  margin: 12px;
-  font: 600 18px/1.3 'Inter', sans-serif;
+.eyes-img, .side-img { 
+    width: 100%; 
+    display: block; 
+    object-fit: cover;
 }
 
-/* Адаптив */
-@media (max-width: 1200px) {
-  .hero__grid {
-    grid-template-columns: 1fr;
-  }
-  .columns {
-    grid-template-columns: 1fr;
-  }
-  .cards--persons {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .cards--memory {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .orchestra__grid {
-    grid-template-columns: 1fr;
-  }
-  .orchestra__cover img {
-    height: 420px;
-  }
+/* Основной контейнер секции медиа */
+.media-section {
+    background-color: var(--bg-color);
+    padding: 60px 0;
+    position: relative;
 }
-@media (max-width: 700px) {
-  .section-title {
+
+.media-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.media-header {
+    margin-bottom: 40px;
+    max-width: 500px; /* Ограничиваем ширину текста как на макете */
+}
+
+.media-header .section-desc {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #333;
+    text-align: left;
+}
+
+/* Стили для карточек */
+.media-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0; /* Убираем стандартный отступ, будем использовать наложение */
+    position: relative;
+    height: 350px; /* Высота блока */
+}
+
+.media-card {
+    overflow: hidden;
+    border-radius: 15px; /* Скругление углов */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.media-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Боковые карточки */
+.side-card {
+    width: 300px;
+    height: 250px;
+    z-index: 1;
+    background: #000;
+}
+
+/* Центральная "выпирающая" карточка */
+.central-card {
+    width: 380px;
+    height: 320px;
+    z-index: 2; /* Поверх остальных */
+    margin: 0 -40px; /* Создает эффект наложения на боковые фото */
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+/* Эффект при наведении */
+.media-card:hover {
+    transform: scale(1.02);
+    z-index: 3;
+}
+
+/* Текстовые блоки */
+.hero-text-overlay h2 { 
+    font-family: 'Times New Roman', Times, serif; /* Засечки для подзаголовка */
+    font-size: 1.5rem; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.hero-text-overlay p, 
+.main-text-area p, 
+.final-text-area p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.final-text-area p strong {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* QUOTE DIVIDER */
+.quote-divider {
+    background-color: #6f2424;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0;
+    text-align: center;
+    color: #fdf8f8;
+    width: 100%;
+}
+.quote-text {
     font-size: 36px;
-  }
-  .cards--persons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .cards--memory {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .cards--crew {
-    grid-template-columns: 1fr;
-  }
-  .media-strip__row {
-    grid-template-columns: 1fr;
-  }
-  .nav {
-    display: none;
-  } /* если нет мобильного меню */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.9);
 }
+
+.personals {
+    text-align: center;
+}
+
+/* Остальные стили (PERSONALS, ORCHESTRA, FOOTER) оставляем без изменений */
+.persons-grid { display: grid; gap: 15px; margin-bottom: 40px; }
+.persons-grid.small { grid-template-columns: repeat(5, 1fr); }
+.persons-grid.large { grid-template-columns: repeat(3, 1fr); }
+.person-card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; filter: grayscale(1); 
+
+}
+
+.orchestra-layout { display: flex; gap: 15px; align-items: stretch; margin-bottom: 60px; }
+.conductor-box { flex: 1; }
+.conductor-img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; filter: grayscale(1); }
+.musicians-grid-layout { flex: 2; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 15px; }
+
+.section-title-small { font-size: 20px; letter-spacing: 2px; margin-bottom: 25px; color: #1a1a1a; }
+
+/* FOOTER */
+.main-footer { background-color: var(--bg-color); padding: 60px 40px; }
+.footer-content { display: flex; gap: 40px; }
+.footer-logo img { width: 100px; margin-bottom: 5px; }
+.logo-text { font-family: 'Old English Text MT', serif; font-size: 24px; color: var(--accent-red); }
+
+.logo-text span { display: block; font-family: Arial; font-size: 12px; color: #000; letter-spacing: 2px; }
+.footer-nav { display: grid; grid-template-columns: repeat(9, 1fr); gap: 15px; flex-grow: 1; }
+.column-title { font-size: 10px; font-weight: bold; margin-bottom: 10px; display: block; }
+.nav-column a { display: block; font-size: 9px; color: #6f2424; text-decoration: none; margin-bottom: 5px; }

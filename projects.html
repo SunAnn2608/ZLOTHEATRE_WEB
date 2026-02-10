@@ -1,147 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Проекты</title>
-    <script src="javascripts/js-basics.js"></script>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-  </head>
-  <body class="theme-light">
-    <!-- HEADER -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗЛО ТЕАТР — Проекты</title>
+  <link rel="stylesheet" href="stylesheets/projects.css">
+  <link rel="stylesheet" href="stylesheets/adaptive.css">
+  <script src="javascripts/scripts.js" defer></script>
+</head>
+<body class="page-transition">
+
     <header class="header">
-      <div class="container header__inner">
-        <a class="logo" href="index.html">ZLOTHEATRE</a>
-        <nav class="nav">
-          <a href="afisha.html">Афиша и билеты</a>
-          <a href="repertuar.html">Репертуар</a>
-          <a href="about.html">О театре</a>
-          <a href="visit.html">Визит в театр</a>
-          <a class="is-active" href="projects.html">Проекты</a>
-          <a href="contacts.html">Контакты</a>
-          <a href="buffet.html">Буфет</a>
-          <a href="souvenir.html">Сувенирная лавка</a>
-        </nav>
-      </div>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo.webp" alt="ЗЛО ТЕАТР">
+            </a>
+            <nav class="nav">
+                <a href="afisha.html">АФИША И БИЛЕТЫ</a>
+                <a href="repertuar.html">РЕПЕРТУАР</a>
+                <a href="about.html">О ТЕАТРЕ</a>
+                <a href="visit.html">ВИЗИТ В ТЕАТР</a>
+                <a href="projects.html" class="active">ПРОЕКТЫ</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="buffet.html">БУФЕТ</a>
+                 <a href="souvenir.html">СУВЕНИРНАЯ ЛАВКА</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- HERO -->
-    <section class="page-hero">
-      <img src="images/projects/hero.jpg" alt="Проектная афиша театра" />
-    </section>
+    <main>
+        <section class="hero-banner">
+            <img src="images/cher.webp" alt="ЗЛО ТЕАТР Проекты" class="full-width-img">
+        </section>
 
-    <!-- АНОНСЫ -->
-    <section id="announces" class="section">
-      <div class="container">
-        <h1 class="section-title">Анонсы</h1>
+        <div class="content-container">
+            <section class="project-section">
+                <h2 class="title-decor">АНОНСЫ</h2>
+                <div class="project-card">
+                    <img src="images/zlo.webp" alt="Игровой веб-спектакль">
+                    <a href="anons-single.html" class="btn-link">Подробнее</a>
+                </div>
+            </section>
 
-        <article class="announce">
-          <figure class="announce__media">
-            <img
-              src="images/projects/announce-1.jpg"
-              alt="Интерактивный онлайн-спектакль"
-            />
-            <figcaption class="tag">Скоро</figcaption>
-          </figure>
-          <div class="announce__info">
-            <h2>Интерактивный онлайн спектакль</h2>
-            <p>
-              Экспериментальная форма, где зритель влияет на ход действия. В
-              основе — психологический триллер с элементами мистического
-              реализма.
-            </p>
-            <div class="announce__cta">
-              <a class="btn btn--ghost" href="#archive">Подробнее</a>
-              <a class="btn" href="afisha.html">Купить билеты</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="announce">
-          <figure class="announce__media">
-            <img
-              src="images/projects/announce-2.jpg"
-              alt="Проект «Город теней»"
-            />
-            <figcaption class="tag">Премьера месяца</figcaption>
-          </figure>
-          <div class="announce__info">
-            <h2>Город теней</h2>
-            <p>
-              Иммерсивная прогулка по ночному театру: залы, коридоры и сцены
-              становятся частью сюжета. Только 8 показов.
-            </p>
-            <div class="announce__cta">
-              <a class="btn btn--ghost" href="#archive">Подробнее</a>
-              <a class="btn" href="afisha.html">Купить билеты</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- АРХИВ -->
-    <section id="archive" class="section section--archive">
-      <div class="container">
-        <h2 class="section-title">Архив</h2>
-
-        <div class="grid">
-          <a class="card" href="#">
-            <img src="images/projects/archive-1.jpg" alt="" />
-            <div class="card__body">
-              <h3>Где шепчет кукушка</h3>
-              <button class="btn btn--ghost">Подробнее</button>
-            </div>
-          </a>
-
-          <a class="card" href="#">
-            <img src="images/projects/archive-2.jpg" alt="" />
-            <div class="card__body">
-              <h3>Глаз внутри стены</h3>
-              <button class="btn btn--ghost">Подробнее</button>
-            </div>
-          </a>
-
-          <a class="card" href="#">
-            <img src="images/projects/archive-3.jpg" alt="" />
-            <div class="card__body">
-              <h3>Тени что шепчут</h3>
-              <button class="btn btn--ghost">Подробнее</button>
-            </div>
-          </a>
-
-          <a class="card" href="#">
-            <img src="images/projects/archive-4.jpg" alt="" />
-            <div class="card__body">
-              <h3>Последний зритель</h3>
-              <button class="btn btn--ghost">Подробнее</button>
-            </div>
-          </a>
+            <section class="project-section">
+                <h2 class="title-decor">АРХИВ</h2>
+                <div class="project-card">
+                    <img src="images/zlo2.webp" alt="Архив спектаклей">
+                    <a href="archive-list.html" class="btn-link">Подробнее</a>
+                </div>
+            </section>
         </div>
-      </div>
-    </section>
+    </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__col">
-          <h4>Проекты</h4>
-          <ul>
-            <li><a href="#announces">Анонсы</a></li>
-            <li><a href="#archive">Архив</a></li>
-          </ul>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/Logo.webp" alt="ЗЛО ТЕАТР">
+            </div>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>ГЛАВНАЯ</h4>
+                    <a href="#">Типы билетов</a><a href="#">Акции</a>
+                </div>
+                <div class="footer-column">
+                    <h4>АФИША И БИЛЕТЫ</h4>
+                    <a href="#">Афиша</a><a href="#">Билеты</a>
+                </div>
+                <div class="footer-column">
+                    <h4>РЕПЕРТУАР</h4>
+                    <a href="#">Медиа</a><a href="#">Персонажи</a><a href="#">Проекты</a>
+                </div>
+                <div class="footer-column">
+                    <h4>О ТЕАТРЕ</h4>
+                    <a href="#">История</a><a href="#">Для СМИ</a><a href="#">Партнерам</a>
+                </div>
+                <div class="footer-column">
+                    <h4>ВИЗИТ В ТЕАТР</h4>
+                    <a href="#">Как добраться</a><a href="#">Правила</a><a href="#">Экскурсии</a>
+                </div>
+                <div class="footer-column">
+                    <h4>ПРОЕКТЫ</h4>
+                    <a href="#">Анонсы</a><a href="#">Архив</a>
+                </div>
+                <div class="footer-column">
+                    <h4>КОНТАКТЫ</h4>
+                    <a href="#">Кассы</a><a href="#">Реквизиты</a>
+                </div>
+                <div class="footer-column">
+                    <h4>БУФЕТ</h4>
+                    <a href="#">Меню</a><a href="#">Предзаказ</a>
+                </div>
+            </div>
         </div>
-        <div class="footer__col">
-          <h4>Контакты</h4>
-          <ul>
-            <li><a href="contacts.html">Контакты театра</a></li>
-            <li><a href="afisha.html">Афиша и билеты</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
     </footer>
 
-    <script src="javascripts/projects.js"></script>
-  </body>
+</body>
 </html>

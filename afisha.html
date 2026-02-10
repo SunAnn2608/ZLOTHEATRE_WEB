@@ -1,206 +1,130 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Афиша и билеты</title>
-    <script src="javascripts/js-basics.js"></script>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-  </head>
-  <body>
-    <!-- HEADER (как на главной) -->
-    <header class="header">
-      <div class="container header__inner">
-        <a href="index.html" class="logo">ZLOTHEATRE</a>
-        <nav class="nav">
-          <a class="is-active" href="afisha.html">Афиша и билеты</a>
-          <a href="repertoir.html">Репертуар</a>
-          <a href="about.html">О театре</a>
-          <a href="visit.html">Визит в театр</a>
-          <a href="projects.html">Проекты</a>
-          <a href="contacts.html">Контакты</a>
-          <a href="buffet.html">Буфет</a>
-          <a href="souvenir.html">Сувенирная лавка</a>
-        </nav>
-      </div>
-    </header>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша — ЗЛО ТЕАТР</title>
+  <link rel="stylesheet" href="stylesheets/afisha.css">
+  <link rel="stylesheet" href="stylesheets/adaptive.css">
+  <script src="javascripts/scripts.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <header class="header-main">
+            <div class="container header-row">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.webp" alt="ЗЛО ТЕАТР">
+                </a>
+                
+                <nav class="top-nav">
+                    <a href="afisha.html" class="active">АФИША И БИЛЕТЫ</a>
+                    <a href="repertuar.html">РЕПЕРТУАР</a>
+                    <a href="about.html">О ТЕАТРЕ</a>
+                    <a href="visit.html">ВИЗИТ В ТЕАТР</a>
+                    <a href="projects.html">ПРОЕКТЫ</a>
+                    <a href="contacts.html">КОНТАКТЫ</a>
+                    <a href="buffet.html">БУФЕТ</a>
+                    <a href="souvenir.html">СУВЕНИРНАЯ ЛАВКА</a>
+                </nav>
+            </div>
+        </header>
 
-    <!-- HERO -->
-    <section class="page-hero">
-      <div class="container">
-        <h1>Афиша — Июнь</h1>
-        <div class="filters">
-          <label class="filters__item">
-            <span>Месяц</span>
-            <select id="monthSelect">
-              <option value="june" selected>Июнь</option>
-              <option value="july">Июль</option>
-              <option value="august">Август</option>
-            </select>
-          </label>
-          <label class="filters__item">
-            <span>Формат</span>
-            <select id="typeSelect">
-              <option value="all" selected>Все</option>
-              <option value="premiere">Премьера</option>
-              <option value="hit">Хит сезона</option>
-            </select>
-          </label>
-          <label class="filters__item filters__search">
-            <input
-              id="searchInput"
-              type="search"
-              placeholder="Поиск спектакля…"
-            />
-          </label>
+        <div class="hero-afisha">
+            <img src="images/mask.webp" alt="Афиша">
         </div>
-      </div>
-    </section>
 
-    <!-- GRID с карточками спектаклей -->
-    <main class="container">
-      <div id="cards" class="cards">
-        <!-- Карточка -->
-        <article class="card" data-month="june" data-type="hit">
-          <figure class="card__media">
-            <img src="images/afisha/teni.jpg" alt="Тени, что шепчут" />
-            <figcaption class="sr-only">
-              Постер спектакля «Тени, что шепчут»
-            </figcaption>
-          </figure>
-          <div class="card__body">
-            <div class="card__meta">
-              <span class="badge badge--hit">Хит сезона</span>
-              <time datetime="2025-06-12">12 июня, 19:00</time>
-            </div>
-            <h3 class="card__title">«Тени, что шепчут»</h3>
-            <p class="card__desc">
-              Психологическая драма о голосах прошлого и цене выбора.
-            </p>
-            <div class="card__actions">
-              <a class="btn btn--primary" href="ticket.html?show=teni"
-                >Купить билет</a
-              >
-              <a class="btn btn--ghost" href="show.html?show=teni">Подробнее</a>
-            </div>
-          </div>
-        </article>
+        <main class="container">
+            <h1 class="page-title">АФИША — ИЮНЬ</h1>
 
-        <article class="card" data-month="june" data-type="premiere">
-          <figure class="card__media">
-            <img
-              src="images/afisha/poslednii-zritel.jpg"
-              alt="Последний зритель"
-            />
-          </figure>
-          <div class="card__body">
-            <div class="card__meta">
-              <span class="badge badge--premiere">Премьера</span>
-              <time datetime="2025-06-18">18 июня, 20:00</time>
-            </div>
-            <h3 class="card__title">«Последний зритель»</h3>
-            <p class="card__desc">Мистерия о границе сцены и реальности.</p>
-            <div class="card__actions">
-              <a class="btn btn--primary" href="ticket.html?show=viewer"
-                >Купить билет</a
-              >
-              <a class="btn btn--ghost" href="show.html?show=viewer"
-                >Подробнее</a
-              >
-            </div>
-          </div>
-        </article>
+            <div class="afisha-grid">
+                
+                <div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/strahi.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Тени что шепчут»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
 
-        <article class="card" data-month="june" data-type="hit">
-          <figure class="card__media">
-            <img src="images/afisha/zerkalo.jpg" alt="Зеркало без отражения" />
-          </figure>
-          <div class="card__body">
-            <div class="card__meta">
-              <span class="badge badge--hit">Хит сезона</span>
-              <time datetime="2025-06-22">22 июня, 19:00</time>
-            </div>
-            <h3 class="card__title">«Зеркало без отражения»</h3>
-            <p class="card__desc">Триллер о человеке, потерявшем своё лицо.</p>
-            <div class="card__actions">
-              <a class="btn btn--primary" href="ticket.html?show=mirror"
-                >Купить билет</a
-              >
-              <a class="btn btn--ghost" href="show.html?show=mirror"
-                >Подробнее</a
-              >
-            </div>
-          </div>
-        </article>
+                <div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/ujasi.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Последний зритель»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
 
-        <article class="card" data-month="july" data-type="premiere">
-          <figure class="card__media">
-            <img src="images/afisha/glubina.jpg" alt="Глубина" />
-          </figure>
-          <div class="card__body">
-            <div class="card__meta">
-              <span class="badge badge--premiere">Премьера</span>
-              <time datetime="2025-07-05">5 июля, 19:30</time>
-            </div>
-            <h3 class="card__title">«Глубина»</h3>
-            <p class="card__desc">
-              Сценическая притча о том, что скрыто под поверхностью.
-            </p>
-            <div class="card__actions">
-              <a class="btn btn--primary" href="ticket.html?show=depth"
-                >Купить билет</a
-              >
-              <a class="btn btn--ghost" href="show.html?show=depth"
-                >Подробнее</a
-              >
-            </div>
-          </div>
-        </article>
+                <div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/teni.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Где шепчет кукушка»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
 
-        <!-- добавляй карточки по этому же шаблону -->
-      </div>
+                <div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/okrujayt.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Тебя окружают»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
 
-      <!-- пагинация (если нужна) -->
-      <nav class="pagination" aria-label="Навигация по странице афиши">
-        <a class="pagination__btn is-disabled" href="#" aria-disabled="true"
-          >Назад</a
-        >
-        <a class="pagination__btn is-active" href="#">1</a>
-        <a class="pagination__btn" href="#">2</a>
-        <a class="pagination__btn" href="#">3</a>
-        <a class="pagination__btn" href="#">Вперёд</a>
-      </nav>
-    </main>
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__col">
-          <h4>Афиша и билеты</h4>
-          <ul>
-            <li><a class="is-active" href="afisha.html">Афиша</a></li>
-            <li><a href="hits.html">Хиты сезона</a></li>
-            <li><a href="cashdesk.html">Касса</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>О театре</h4>
-          <ul>
-            <li><a href="history.html">История</a></li>
-            <li><a href="press.html">Для СМИ</a></li>
-            <li><a href="sponsors.html">Спонсоры</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Контакты</h4>
-          <ul>
-            <li><a href="contacts.html">Контакты театра</a></li>
-            <li><a href="buffet.html">Буфет</a></li>
-            <li><a href="souvenir.html">Сувенирная лавка</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer__copy">© 2025 ZLOTHEATRE</p>
-    </footer>
-  </body>
-  <script src="javascripts/afisha.js"></script>
-</html>
+                <div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/strah2.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Глаз внутри стены»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
+
+                <div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/stah_pogloshaet.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Страх поглощает»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
+
+                <div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/glubina.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Глубина»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
+
+<div class="show-item">
+                    <div class="show-poster">
+                        <span class="age">18+</span>
+                        <img src="images/27.webp" alt="Спектакль">
+                    </div>
+                    <p class="show-title">«Ключ от чужого сна»</p>
+                    <a href="#" class="btn-more">Подробнее</a>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer-bottom">
+            <div class="container footer-grid">
+                <div class="footer-logo-wrap">
+                    <img src="images/Logo.webp" alt="ЗЛО">
+                </div>
+                <div class="footer-col"><h4>ГЛАВНАЯ</h4><a href="#">Хиты сезона</a><a href="#">Акции</a></div>
+                <div class="footer-col"><h4>АФИША И БИЛЕТЫ</h4><a href="#">Хиты сезона</a><a href="#">Афиша</a><a href="#">Касса</a></div>
+                <div class="footer-col"><h4>РЕПЕРТУАР</h4><a href="#">Медиа</a><a href="#">Персоналии</a><a href="#">Проекты</a></div>
+                <div class="footer-col"><h4>О ТЕАТРЕ</h4><a href="#">История</a><a href="#">Для СМИ</a><a href="#">Спонсоры</a></div>
+                <div class="footer-col"><h4>ВИЗИТ В ТЕАТР</h4><a href="#">Как добраться</a><a href="#">Правила</a><a href="#">Экскурсия</a></div>
+                <div class="footer-col"><h4>ПРОЕКТЫ</h4><a href="#">Анонсы</a><a href="#">Архив</a></div>
+                <div class="footer-col"><h4>КОНТАКТЫ</h4><a href="#">Касса</a><a href="#">Реквизиты</a></div>
+                <div class="footer-col
